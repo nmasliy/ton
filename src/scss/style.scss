@@ -1,0 +1,21 @@
+// *Base
+@import 'custom-reset';
+@import 'config';
+
+// *Components
+@import 'components/buttons';
+@import 'components/header-menu';
+@import 'components/modals';
+@import 'components/accordion';
+@import 'components/pagination';
+
+
+// *Blocks
+@import 'blocks/header';
+@import 'blocks/hero';
+@import 'blocks/steps';
+@import 'blocks/common';
+@import 'blocks/footer';
+
+// *Media
+@import 'media';

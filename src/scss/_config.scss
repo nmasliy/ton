@@ -1,0 +1,134 @@
+// *Vars
+// !Colors
+$main: #303757;
+$text: #43475C;
+$grey: #8C8F9F;
+$grey-bg: #F8F9FB;
+$primary: #3B86C6;
+$secondary: #97CA3E;
+$white: #fff;
+$black: #000;
+$danger: #CA573E;
+$red: #c51818;
+$green: #2e6f1a;
+// !/Colors
+
+$mobileBreakpoint: 768px;
+// */Vars
+
+body {
+    min-width: 320px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.4; 
+    color: $main;
+    background-color: $white;
+}
+
+input, textarea {
+    display: inline-block;
+    background-color: $white;
+    border-radius: 10px;
+    padding: 15px 30px;
+
+    // *Дополнительные классы для валидации
+    &.invalid {
+        color: $red;
+        border-color: $red;
+
+        &::placeholder {
+            color: $red;
+        }
+    }
+    &.valid {
+        color: $green;
+        border-color: $green;
+
+        &::placeholder {
+            color: $green;
+        }
+    }
+}
+
+textarea {
+    min-height: 150px;
+}
+
+button {
+    cursor: pointer;
+}
+
+section {
+    overflow: hidden;
+}
+
+p {
+    margin-bottom: 30px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.overflow-hidden {
+    overflow: hidden;
+
+    body {
+        overflow: hidden;
+    }
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: block;
+}
+
+.main-text {
+    color: $grey;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.title {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 900;
+}
+
+h1.title {
+    font-size: 41px;
+    line-height: 51px;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+.main {
+    flex: 1 1 auto;
+    padding-top: 70px;
+}
+
+.section-category {
+    display: inline-block;
+    min-width: 118px;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: rgba($secondary, .1);
+    color: $secondary;
+    border-radius: 10px;
+}

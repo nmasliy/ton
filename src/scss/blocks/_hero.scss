@@ -1,0 +1,36 @@
+.hero {
+    padding-bottom: 17px;
+    background: url('../img/hero-bg.svg') left top 105px no-repeat;
+
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &__content {
+        width: calc(50% - 85px);
+        margin-right: 85px;
+    }
+
+    &__title {
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        margin-bottom: 56px;
+    }
+
+    &__buttons {
+        margin: -8px;
+    }
+
+    &__btn {
+        margin: 8px;
+    }
+
+    &__img {
+        text-align: right;
+        width: 50%;
+    }
+}

@@ -1,0 +1,31 @@
+.header {
+    padding: 8px 0;
+
+    &__navigation {
+        overflow: hidden;
+    }
+
+    &__buttons {
+
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+    }
+    
+    &__navigation {
+        margin-right: auto;
+    }
+    
+    &__btn {
+        margin-left: 12px;
+        &:first-child {
+            margin-left: 0;
+        }
+        &--lg {
+            padding: 14px 46px;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+.steps {
+    padding-top: 52px;
+    padding-bottom: 40px;
+
+    &__content {
+        max-width: 500px;
+        margin-bottom: 45px;
+    }
+
+    &__title {
+        margin-top: 8px;
+        margin-bottom: 19px;
+    }
+
+    &__list {
+        display: flex;
+        margin: -27px;
+    }
+
+    &__item {
+        margin: 27px;
+        width: calc(25% - 54px);
+        max-width: 235px;
+        &:nth-child(2) {
+            width: 100%;
+            max-width: 280px;
+        }
+    }
+
+    &__img {
+        text-align: center;
+        min-height: 178px;
+    }
+
+    &__item-head {
+        display: flex;
+    }
+
+    &__num {
+        font-family: 'Inter', sans-serif;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 39px;
+        letter-spacing: -0.05em;
+        color: rgba(#3070A6, .2);
+    }
+
+    &__item-title {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 30px;
+        margin-left: 8px;
+        margin-top: 3px;
+    }
+
+    &__item-text {
+        font-size: 18px;
+        line-height: 23px;
+        color: $grey;
+        max-width: 234px;
+    }
+}
+

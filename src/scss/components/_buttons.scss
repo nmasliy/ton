@@ -1,0 +1,85 @@
+// *Buttons
+.btn {
+    display: inline-block;
+    padding: 13px 35px;
+    text-align: center;
+    cursor: pointer;
+    white-space: break-spaces;
+    border: 1px solid transparent;
+    border-radius: 45px;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: normal;
+    color: $primary;
+
+    @media screen and (min-width: $mobileBreakpoint)  {
+        transition: .35s ease;
+        path, svg {
+            transition: .35s ease;
+        }
+    }
+
+    svg, img {
+        margin-right: 10px;
+    }
+
+    &--flex {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 19px 40px;
+    }
+
+    &--default {
+        background-color: $primary;
+        color: $white;
+
+        @media screen and (min-width: $mobileBreakpoint) {
+            &:hover {
+                background-color: transparent;
+                color: $primary;
+                border-color: $primary;
+
+                path {
+                    stroke: $primary;
+                }
+            }
+        }
+    }
+
+    &--secondary {
+        background-color: $secondary;
+        color: $white;
+        &.btn--outline {
+            border-color: $secondary;
+        }
+        @media screen and (min-width: $mobileBreakpoint) {
+            &:hover {
+                background-color: transparent;
+                border-color: $secondary;
+                color: $secondary;
+
+                path {
+                    fill: $secondary;
+                }
+            }
+        }
+    }
+    
+    &--outline {
+        border-color: $primary;
+        @media screen and (min-width: $mobileBreakpoint) {
+            &:hover {
+                background-color: $primary;
+                color: $white;
+            }
+        }
+    }
+
+    &--sm {
+        min-width: 175px;
+        padding: 18px 30px;
+    }
+
+}
+// */Buttons

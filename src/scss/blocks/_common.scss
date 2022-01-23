@@ -1,0 +1,27 @@
+.common {
+    padding-top: 63px;
+    padding-bottom: 82px;
+    background: $grey-bg;
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__img {
+        width: 45%;
+    }
+
+    &__content {
+        width: 55%;
+        padding-top: 20px;
+    }
+
+    &__title {
+        margin-top: 8px;
+        margin-bottom: 14px;
+    }
+
+    &__text {
+        padding-right: 60px;
+    }
+}
