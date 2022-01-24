@@ -1581,12 +1581,14 @@ h1.title {
 .worker-item__buttons {
   display: flex;
   flex-wrap: wrap;
-  margin: -6px;
+  margin: -4px;
   padding-top: 16px;
 }
 .worker-item__btn {
-  margin: 6px;
+  margin: 4px;
   flex-grow: 1;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 .worker-item__btn.btn--grey {
   padding: 14px 32px;
