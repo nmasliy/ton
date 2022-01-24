@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+    @@include('html/head.html', {
+        "title": "Workers"
+    })
+    <body>
+        <div class="page-wrapper">
+            @@include('html/header.html', {})
+            <div class="page">
+                <div class="container page__container">
+                    <main class="main page__content">
+                        <form class="page__search page-search">
+                            <input type="search" class="page-search__input" placeholder="Search">
+                            <div class="page-search__select">
+                                <select class="custom-select">
+                                    <option data-display="Select" selected value="1">Standart sorting</option>
+                                    <option value="1">2 sorting</option>
+                                    <option value="2">3 sorting</option>
+                                    <option value="3">4 sorting</option>
+                                    <option value="4">5 sorting</option>
+                                </select>
+                            </div>
+                        </form>
+                        <section class="workers">
+                            <ul class="workers__list">
+                                <li class="workers__item worker-item">
+                                    <div class="worker-item__head">
+                                        <div class="worker-item__img">
+                                            <img width="129" height="129" src="@img/worker-1.png" alt="worker">
+                                        </div>
+                                        <div class="worker-item__specifications">
+                                            <div class="worker-item__speciality">Full-stack developer</div>
+                                            <div class="worker-item__name">Jane Smith-Robberton</div>
+                                            <a href="#" class="worker-item__employment">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9 11.25H6.75V9L13.5 2.25L15.75 4.5L9 11.25Z" stroke="#3B86C6" stroke-width="1.28571" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M11.8125 3.9375L14.0625 6.1875" stroke="#3B86C6" stroke-width="1.28571" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M15.1875 8.4375V14.625C15.1875 14.7742 15.1282 14.9173 15.0227 15.0227C14.9173 15.1282 14.7742 15.1875 14.625 15.1875H3.375C3.22582 15.1875 3.08274 15.1282 2.97725 15.0227C2.87176 14.9173 2.8125 14.7742 2.8125 14.625V3.375C2.8125 3.22582 2.87176 3.08274 2.97725 2.97725C3.08274 2.87176 3.22582 2.8125 3.375 2.8125H9.5625" stroke="#3B86C6" stroke-width="1.28571" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <span>Underemployment</span>
+                                            </a>
+                                            <div class="worker-item__extra">
+                                                <div class="worker-item__extra-item">
+                                                    <img src="@img/user.svg" alt="">
+                                                    <span>18 y.o.</span>
+                                                </div>
+                                                <div class="worker-item__extra-item">
+                                                    <img src="@img/clock.svg" alt="">
+                                                    <span>UTC+14:00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="worker-item__categories">
+                                        <li><a href="#">Frontend developing</a></li>
+                                        <li><a href="#">Backend developing</a></li>
+                                        <li><a href="#">IT</a></li>
+                                        <li><a href="#">UI/UX design</a></li>
+                                    </ul>
+                                    <div class="worker-item__experience">
+                                        <div class="worker-item__experience-img">
+                                            <img src="@img/check.svg" alt="">
+                                        </div>
+                                        <div class="worker-item__experience-content">
+                                            <div class="worker-item__experience-title">Crypto projects</div>
+                                            <div class="worker-item__experience-text">Have experience in crypto projects</div>
+                                        </div>
+                                    </div>
+                                    <div class="worker-item__info">
+                                        <div class="worker-item__info-title">Portfolio</div>
+                                        <div class="worker-item__info-text">
+                                            Pleased him another was settled for. Moreover end horrible endeavor entrance any families. Income appear extent on of thrown in admire...
+                                        </div>
+                                    </div>
+                                    <div class="worker-item__buttons">
+                                        <a href="#" class="worker-item__btn btn btn--default">Send a message</a>
+                                        <a href="#" class="worker-item__btn btn btn--grey">Open profile</a>
+                                    </div>
+                                </li>
+                                <li class="workers__item worker-item">
+                                    <div class="worker-item__head">
+                                        <div class="worker-item__img">
+                                            <img width="129" height="129" src="@img/worker-1.png" alt="worker">
+                                        </div>
+                                        <div class="worker-item__specifications">
+                                            <div class="worker-item__speciality">Full-stack developer</div>
+                                            <div class="worker-item__name">Jane Smith-Robberton</div>
+                                            <a href="#" class="worker-item__employment">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9 11.25H6.75V9L13.5 2.25L15.75 4.5L9 11.25Z" stroke="#3B86C6" stroke-width="1.28571" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M11.8125 3.9375L14.0625 6.1875" stroke="#3B86C6" stroke-width="1.28571" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M15.1875 8.4375V14.625C15.1875 14.7742 15.1282 14.9173 15.0227 15.0227C14.9173 15.1282 14.7742 15.1875 14.625 15.1875H3.375C3.22582 15.1875 3.08274 15.1282 2.97725 15.0227C2.87176 14.9173 2.8125 14.7742 2.8125 14.625V3.375C2.8125 3.22582 2.87176 3.08274 2.97725 2.97725C3.08274 2.87176 3.22582 2.8125 3.375 2.8125H9.5625" stroke="#3B86C6" stroke-width="1.28571" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <span>Underemployment</span>
+                                            </a>
+                                            <div class="worker-item__extra">
+                                                <div class="worker-item__extra-item">
+                                                    <img src="@img/user.svg" alt="">
+                                                    <span>18 y.o.</span>
+                                                </div>
+                                                <div class="worker-item__extra-item">
+                                                    <img src="@img/clock.svg" alt="">
+                                                    <span>UTC+14:00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="worker-item__categories">
+                                        <li><a href="#">Frontend developing</a></li>
+                                        <li><a href="#">Backend developing</a></li>
+                                        <li><a href="#">IT</a></li>
+                                        <li><a href="#">UI/UX design</a></li>
+                                    </ul>
+                                    <div class="worker-item__experience worker-item__experience--red">
+                                        <div class="worker-item__experience-img">
+                                            <img src="@img/close-danger.svg" alt="">
+                                        </div>
+                                        <div class="worker-item__experience-content">
+                                            <div class="worker-item__experience-title">Crypto projects</div>
+                                            <div class="worker-item__experience-text">Have experience in crypto projects</div>
+                                        </div>
+                                    </div>
+                                    <div class="worker-item__info">
+                                        <div class="worker-item__info-title">Portfolio</div>
+                                        <div class="worker-item__info-text">
+                                            Pleased him another was settled for. Moreover end horrible endeavor entrance any families. Income appear extent on of thrown in admire...
+                                        </div>
+                                    </div>
+                                    <div class="worker-item__buttons">
+                                        <a href="#" class="worker-item__btn btn btn--default">Send a message</a>
+                                        <a href="#" class="worker-item__btn btn btn--grey">Open profile</a>
+                                    </div>
+                                </li>
+                                <li class="workers__item worker-item">
+                                    <div class="worker-item__head">
+                                        <div class="worker-item__img">
+                                            <img width="129" height="129" src="@img/worker-1.png" alt="worker">
+                                        </div>
+                                        <div class="worker-item__specifications">
+                                            <div class="worker-item__speciality">Full-stack developer</div>
+                                            <div class="worker-item__name">Jane Smith-Robberton</div>
+                                            <a href="#" class="worker-item__employment">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9 11.25H6.75V9L13.5 2.25L15.75 4.5L9 11.25Z" stroke="#3B86C6" stroke-width="1.28571" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M11.8125 3.9375L14.0625 6.1875" stroke="#3B86C6" stroke-width="1.28571" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M15.1875 8.4375V14.625C15.1875 14.7742 15.1282 14.9173 15.0227 15.0227C14.9173 15.1282 14.7742 15.1875 14.625 15.1875H3.375C3.22582 15.1875 3.08274 15.1282 2.97725 15.0227C2.87176 14.9173 2.8125 14.7742 2.8125 14.625V3.375C2.8125 3.22582 2.87176 3.08274 2.97725 2.97725C3.08274 2.87176 3.22582 2.8125 3.375 2.8125H9.5625" stroke="#3B86C6" stroke-width="1.28571" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <span>Underemployment</span>
+                                            </a>
+                                            <div class="worker-item__extra">
+                                                <div class="worker-item__extra-item">
+                                                    <img src="@img/user.svg" alt="">
+                                                    <span>18 y.o.</span>
+                                                </div>
+                                                <div class="worker-item__extra-item">
+                                                    <img src="@img/clock.svg" alt="">
+                                                    <span>UTC+14:00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="worker-item__categories">
+                                        <li><a href="#">Frontend developing</a></li>
+                                        <li><a href="#">Backend developing</a></li>
+                                        <li><a href="#">IT</a></li>
+                                        <li><a href="#">UI/UX design</a></li>
+                                    </ul>
+                                    <div class="worker-item__experience">
+                                        <div class="worker-item__experience-img">
+                                            <img src="@img/check.svg" alt="">
+                                        </div>
+                                        <div class="worker-item__experience-content">
+                                            <div class="worker-item__experience-title">Crypto projects</div>
+                                            <div class="worker-item__experience-text">Have experience in crypto projects</div>
+                                        </div>
+                                    </div>
+                                    <div class="worker-item__info worker-item__info--empty">
+                                        <div class="worker-item__info-title">Portfolio</div>
+                                        <div class="worker-item__info-text">
+                                            Applicant didn’t fiil up portfolio yet
+                                        </div>
+                                    </div>
+                                    <div class="worker-item__buttons">
+                                        <a href="#" class="worker-item__btn btn btn--default">Send a message</a>
+                                        <a href="#" class="worker-item__btn btn btn--grey">Open profile</a>
+                                    </div>
+                                </li>
+                                <li class="workers__item worker-item">
+                                    <div class="worker-item__head">
+                                        <div class="worker-item__img">
+                                            <img width="129" height="129" src="@img/worker-1.png" alt="worker">
+                                        </div>
+                                        <div class="worker-item__specifications">
+                                            <div class="worker-item__speciality">Full-stack developer</div>
+                                            <div class="worker-item__name">Jane Smith-Robberton</div>
+                                            <a href="#" class="worker-item__employment">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9 11.25H6.75V9L13.5 2.25L15.75 4.5L9 11.25Z" stroke="#3B86C6" stroke-width="1.28571" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M11.8125 3.9375L14.0625 6.1875" stroke="#3B86C6" stroke-width="1.28571" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M15.1875 8.4375V14.625C15.1875 14.7742 15.1282 14.9173 15.0227 15.0227C14.9173 15.1282 14.7742 15.1875 14.625 15.1875H3.375C3.22582 15.1875 3.08274 15.1282 2.97725 15.0227C2.87176 14.9173 2.8125 14.7742 2.8125 14.625V3.375C2.8125 3.22582 2.87176 3.08274 2.97725 2.97725C3.08274 2.87176 3.22582 2.8125 3.375 2.8125H9.5625" stroke="#3B86C6" stroke-width="1.28571" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <span>Underemployment</span>
+                                            </a>
+                                            <div class="worker-item__extra">
+                                                <div class="worker-item__extra-item">
+                                                    <img src="@img/user.svg" alt="">
+                                                    <span>18 y.o.</span>
+                                                </div>
+                                                <div class="worker-item__extra-item">
+                                                    <img src="@img/clock.svg" alt="">
+                                                    <span>UTC+14:00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="worker-item__categories">
+                                        <li><a href="#">Frontend developing</a></li>
+                                        <li><a href="#">Backend developing</a></li>
+                                        <li><a href="#">IT</a></li>
+                                        <li><a href="#">UI/UX design</a></li>
+                                    </ul>
+                                    <div class="worker-item__experience worker-item__experience--red">
+                                        <div class="worker-item__experience-img">
+                                            <img src="@img/close-danger.svg" alt="">
+                                        </div>
+                                        <div class="worker-item__experience-content">
+                                            <div class="worker-item__experience-title">Crypto projects</div>
+                                            <div class="worker-item__experience-text">Have experience in crypto projects</div>
+                                        </div>
+                                    </div>
+                                    <div class="worker-item__info">
+                                        <div class="worker-item__info-title">Portfolio</div>
+                                        <div class="worker-item__info-text">
+                                            Pleased him another was settled for. Moreover end horrible endeavor entrance any families. Income appear extent on of thrown in admire...
+                                        </div>
+                                    </div>
+                                    <div class="worker-item__buttons">
+                                        <a href="#" class="worker-item__btn btn btn--default">Send a message</a>
+                                        <a href="#" class="worker-item__btn btn btn--grey">Open profile</a>
+                                    </div>
+                                </li>
+                                <li class="workers__item worker-item">
+                                    <div class="worker-item__head">
+                                        <div class="worker-item__img">
+                                            <img width="129" height="129" src="@img/worker-1.png" alt="worker">
+                                        </div>
+                                        <div class="worker-item__specifications">
+                                            <div class="worker-item__speciality">Full-stack developer</div>
+                                            <div class="worker-item__name">Jane Smith-Robberton</div>
+                                            <a href="#" class="worker-item__employment">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9 11.25H6.75V9L13.5 2.25L15.75 4.5L9 11.25Z" stroke="#3B86C6" stroke-width="1.28571" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M11.8125 3.9375L14.0625 6.1875" stroke="#3B86C6" stroke-width="1.28571" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M15.1875 8.4375V14.625C15.1875 14.7742 15.1282 14.9173 15.0227 15.0227C14.9173 15.1282 14.7742 15.1875 14.625 15.1875H3.375C3.22582 15.1875 3.08274 15.1282 2.97725 15.0227C2.87176 14.9173 2.8125 14.7742 2.8125 14.625V3.375C2.8125 3.22582 2.87176 3.08274 2.97725 2.97725C3.08274 2.87176 3.22582 2.8125 3.375 2.8125H9.5625" stroke="#3B86C6" stroke-width="1.28571" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <span>Underemployment</span>
+                                            </a>
+                                            <div class="worker-item__extra">
+                                                <div class="worker-item__extra-item">
+                                                    <img src="@img/user.svg" alt="">
+                                                    <span>18 y.o.</span>
+                                                </div>
+                                                <div class="worker-item__extra-item">
+                                                    <img src="@img/clock.svg" alt="">
+                                                    <span>UTC+14:00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="worker-item__categories">
+                                        <li><a href="#">Frontend developing</a></li>
+                                        <li><a href="#">Backend developing</a></li>
+                                        <li><a href="#">IT</a></li>
+                                        <li><a href="#">UI/UX design</a></li>
+                                    </ul>
+                                    <div class="worker-item__experience">
+                                        <div class="worker-item__experience-img">
+                                            <img src="@img/check.svg" alt="">
+                                        </div>
+                                        <div class="worker-item__experience-content">
+                                            <div class="worker-item__experience-title">Crypto projects</div>
+                                            <div class="worker-item__experience-text">Have experience in crypto projects</div>
+                                        </div>
+                                    </div>
+                                    <div class="worker-item__info">
+                                        <div class="worker-item__info-title">Portfolio</div>
+                                        <div class="worker-item__info-text">
+                                            Pleased him another was settled for. Moreover end horrible endeavor entrance any families. Income appear extent on of thrown in admire...
+                                        </div>
+                                    </div>
+                                    <div class="worker-item__buttons">
+                                        <a href="#" class="worker-item__btn btn btn--default">Send a message</a>
+                                        <a href="#" class="worker-item__btn btn btn--grey">Open profile</a>
+                                    </div>
+                                </li>
+                                <li class="workers__item worker-item">
+                                    <div class="worker-item__head">
+                                        <div class="worker-item__img">
+                                            <img width="129" height="129" src="@img/worker-1.png" alt="worker">
+                                        </div>
+                                        <div class="worker-item__specifications">
+                                            <div class="worker-item__speciality">Full-stack developer</div>
+                                            <div class="worker-item__name">Jane Smith-Robberton</div>
+                                            <a href="#" class="worker-item__employment">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9 11.25H6.75V9L13.5 2.25L15.75 4.5L9 11.25Z" stroke="#3B86C6" stroke-width="1.28571" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M11.8125 3.9375L14.0625 6.1875" stroke="#3B86C6" stroke-width="1.28571" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M15.1875 8.4375V14.625C15.1875 14.7742 15.1282 14.9173 15.0227 15.0227C14.9173 15.1282 14.7742 15.1875 14.625 15.1875H3.375C3.22582 15.1875 3.08274 15.1282 2.97725 15.0227C2.87176 14.9173 2.8125 14.7742 2.8125 14.625V3.375C2.8125 3.22582 2.87176 3.08274 2.97725 2.97725C3.08274 2.87176 3.22582 2.8125 3.375 2.8125H9.5625" stroke="#3B86C6" stroke-width="1.28571" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <span>Underemployment</span>
+                                            </a>
+                                            <div class="worker-item__extra">
+                                                <div class="worker-item__extra-item">
+                                                    <img src="@img/user.svg" alt="">
+                                                    <span>18 y.o.</span>
+                                                </div>
+                                                <div class="worker-item__extra-item">
+                                                    <img src="@img/clock.svg" alt="">
+                                                    <span>UTC+14:00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="worker-item__categories">
+                                        <li><a href="#">Frontend developing</a></li>
+                                        <li><a href="#">Backend developing</a></li>
+                                        <li><a href="#">IT</a></li>
+                                        <li><a href="#">UI/UX design</a></li>
+                                    </ul>
+                                    <div class="worker-item__experience worker-item__experience--red">
+                                        <div class="worker-item__experience-img">
+                                            <img src="@img/close-danger.svg" alt="">
+                                        </div>
+                                        <div class="worker-item__experience-content">
+                                            <div class="worker-item__experience-title">Crypto projects</div>
+                                            <div class="worker-item__experience-text">Have experience in crypto projects</div>
+                                        </div>
+                                    </div>
+                                    <div class="worker-item__info">
+                                        <div class="worker-item__info-title">Portfolio</div>
+                                        <div class="worker-item__info-text">
+                                            Pleased him another was settled for. Moreover end horrible endeavor entrance any families. Income appear extent on of thrown in admire...
+                                        </div>
+                                    </div>
+                                    <div class="worker-item__buttons">
+                                        <a href="#" class="worker-item__btn btn btn--default">Send a message</a>
+                                        <a href="#" class="worker-item__btn btn btn--grey">Open profile</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+                    </main>
+                    <aside class="filter page__aside">
+                        <form action="#" class="filter__form">
+                            <div class="filter__title">Filter</div>
+                            <div class="filter__item">
+                                <div class="filter__subtitle">Categories</div>
+                                <div class="filter__categories">
+                                    <ul class="filter__categories-list">
+                                        <li class="filter-category" data-accordion>
+                                            <div class="filter-category__head" data-accordion-trigger>
+                                                <span>HR Group Leading Specialist</span>
+                                                <img src="@img/arrow-down.svg" alt="">
+                                            </div>
+                                            <div class="filter-category__content">
+                                                <ul>
+                                                    <li><a href="#">Frontend development</a></li>
+                                                    <li><a href="#">Backend development</a></li>
+                                                    <li><a href="#">Full-stack development</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="filter-category" data-accordion>
+                                            <div class="filter-category__head" data-accordion-trigger>
+                                                <span>IT technologies - Development</span>
+                                                <img src="@img/arrow-down.svg" alt="">
+                                            </div>
+                                            <div class="filter-category__content">
+                                                <ul>
+                                                    <li><a href="#">Frontend development</a></li>
+                                                    <li><a href="#">Backend development</a></li>
+                                                    <li><a href="#">Full-stack development</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="filter-category" data-accordion>
+                                            <div class="filter-category__head" data-accordion-trigger>
+                                                <span>Chief Project Engineer</span>
+                                                <img src="@img/arrow-down.svg" alt="">
+                                            </div>
+                                            <div class="filter-category__content">
+                                                <ul>
+                                                    <li><a href="#">Frontend development</a></li>
+                                                    <li><a href="#">Backend development</a></li>
+                                                    <li><a href="#">Full-stack development</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="filter-category" data-accordion>
+                                            <div class="filter-category__head" data-accordion-trigger>
+                                                <span>Chief Specialist-Expert of the Legal Support Department</span>
+                                                <img src="@img/arrow-down.svg" alt="">
+                                            </div>
+                                            <div class="filter-category__content">
+                                                <ul>
+                                                    <li><a href="#">Frontend development</a></li>
+                                                    <li><a href="#">Backend development</a></li>
+                                                    <li><a href="#">Full-stack development</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="filter-category" data-accordion>
+                                            <div class="filter-category__head" data-accordion-trigger>
+                                                <span>UX/UI designer</span>
+                                                <img src="@img/arrow-down.svg" alt="">
+                                            </div>
+                                            <div class="filter-category__content">
+                                                <ul>
+                                                    <li><a href="#">Frontend development</a></li>
+                                                    <li><a href="#">Backend development</a></li>
+                                                    <li><a href="#">Full-stack development</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="filter-category" data-accordion>
+                                            <div class="filter-category__head" data-accordion-trigger>
+                                                <span>New category</span>
+                                                <img src="@img/arrow-down.svg" alt="">
+                                            </div>
+                                            <div class="filter-category__content">
+                                                <ul>
+                                                    <li><a href="#">Frontend development</a></li>
+                                                    <li><a href="#">Backend development</a></li>
+                                                    <li><a href="#">Full-stack development</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="filter-category" data-accordion>
+                                            <div class="filter-category__head" data-accordion-trigger>
+                                                <span>New category</span>
+                                                <img src="@img/arrow-down.svg" alt="">
+                                            </div>
+                                            <div class="filter-category__content">
+                                                <ul>
+                                                    <li><a href="#">Frontend development</a></li>
+                                                    <li><a href="#">Backend development</a></li>
+                                                    <li><a href="#">Full-stack development</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <button class="filter__btn btn btn--light" type="button">Show all</button>
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__subtitle">Age</div>
+                                <div class="filter__slider">
+                                    <div class="filter__slider-element" data-min="18" data-max="45"></div>
+                                    <div class="filter__slider-info">
+                                        <div class="filter__slider-col">
+                                            <div class="filter__slider-caption">From</div>
+                                            <div class="filter__slider-input">
+                                                <input type="number" id="filter-age-from">
+                                                <span class="filter__slider-input-text">years</span>
+                                            </div>
+                                        </div>
+                                        <div class="filter__slider-col">
+                                            <div class="filter__slider-caption">To</div>
+                                            <div class="filter__slider-input">
+                                                <input type="number" id="filter-age-to">
+                                                <span class="filter__slider-input-text">years</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__subtitle">Employment type</div>
+                                <div class="filter__checkboxes">
+                                    <div class="filter__checkbox-item">
+                                        <label>
+                                            <input type="checkbox" name="employment" value="1">
+                                            <div class="filter__checkbox"></div>
+                                            <div class="filter__checkbox-text">Full employment</div>
+                                            <div class="filter__checkbox-number">12 099</div>
+                                        </label>
+                                    </div>
+                                    <div class="filter__checkbox-item">
+                                        <label>
+                                            <input type="checkbox" name="employment" value="2">
+                                            <div class="filter__checkbox"></div>
+                                            <div class="filter__checkbox-text">Underemployment</div>
+                                            <div class="filter__checkbox-number">1 102</div>
+                                        </label>
+                                    </div>
+                                    <div class="filter__checkbox-item">
+                                        <label>
+                                            <input type="checkbox" name="employment" value="3">
+                                            <div class="filter__checkbox"></div>
+                                            <div class="filter__checkbox-text">Remote work</div>
+                                            <div class="filter__checkbox-number">90</div>
+                                        </label>
+                                    </div>
+                                    <div class="filter__checkbox-item">
+                                        <label>
+                                            <input type="checkbox" name="employment" value="4">
+                                            <div class="filter__checkbox"></div>
+                                            <div class="filter__checkbox-text">Project work</div>
+                                            <div class="filter__checkbox-number">90 992</div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </aside>
+                </div>
+            </div>
+            @@include('html/footer.html', {})
+        </div>
+        @@include('html/scripts.html', {})
+    </body>
+</html>

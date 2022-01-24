@@ -29,6 +29,51 @@
             line-height: 20px;
         }
     }
+    .workers__list {
+        margin: -12px;
+    }
+    .worker-item {
+        width: calc(50% - 24px);
+        margin: 12px;
+        &__head {
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        &__img img {
+            width: 110px;
+        }
+        &__speciality {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        &__name {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &__employment {
+            padding: 6px 10px;
+            span {
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+        &__extra-item {
+            font-size: 13px;
+        }
+    }
+    .page {
+        &__container {
+            flex-direction: column;
+        }
+        &__aside {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        &__content {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -109,6 +154,38 @@
 }
 
 @media screen and (max-width: $mobileBreakpoint) { // 768
+    .filter {
+        &__title {
+            margin-bottom: 15px;
+            font-size: 22px;
+            line-height: 27px;
+        }
+        &__subtitle {
+            font-size: 17px;
+        }
+        &__checkbox-text {
+            font-size: 15px;
+        }
+    }
+    .workers {
+        padding-bottom: 40px;
+        &__list {
+            margin: 0;
+        }
+    }
+    .worker-item {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 15px;
+        padding: 15px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .btn {
+        padding: 13px 30px;
+        font-size: 14px;
+    }
     .common {
         padding-top: 30px;
         padding-bottom: 40px;
@@ -167,6 +244,26 @@
 }
 
 @media screen and (max-width: 600px) {
+    .filter {
+        padding: 0;
+        background-color: transparent;
+    }
+    .filter-category {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 4px;
+    }
+    .page-search {
+        flex-wrap: wrap;
+        &__input {
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        &__select {
+            margin-left: 0;
+            width: 100%;
+        }
+    }
     .steps {
         &__item-head {
             display: block;
@@ -198,6 +295,15 @@
 }
 
 @media screen and (max-width: 400px) {
+    .worker-item {
+        &__head {
+            flex-direction: column;
+            text-align: center;
+        }
+        &__specifications {
+            margin-left: 0;
+        }
+    }
     .steps {
         &__list {
             margin: 0;

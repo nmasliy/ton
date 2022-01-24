@@ -1,0 +1,213 @@
+.workers {
+    padding-bottom: 80px;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -11px -16px;
+    }
+
+    &__item {
+        width: calc(50% - 32px);
+        margin: 11px 16px;
+    }
+}
+
+.worker-item {
+    display: flex;
+    flex-direction: column;
+    padding: 22px 20px 30px 20px;
+    border: 1px solid $grey-bg;
+    box-shadow: 0px 4px 30px rgba(164, 164, 164, 0.1);
+    border-radius: 16px;
+    background-color: $white;
+
+    &__head {
+        display: flex;
+        margin-bottom: 8px;
+    }
+
+    &__img {
+        img {
+            width: 129px;
+        }
+    }
+
+    &__specifications {
+        margin-left: 22px;
+        padding-top: 4px;
+    }
+
+    &__speciality {
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
+        color: $text;
+    }
+
+    &__name {
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 10px;
+        color: $text;
+    }
+
+    &__employment {
+        display: inline-flex;
+        align-items: center;
+        border: 0.5px solid #D1D9EA;
+        border-radius: 8px;
+        padding: 8px 16px;
+        margin-bottom: 12px;
+
+        img, svg {
+            flex-shrink: 0;
+        }
+
+        span {
+            display: inline-block;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            line-height: 19px;
+            color: $primary;
+            margin-left: 6px;
+        }
+
+        @media screen and (min-width: $mobileBreakpoint) {
+            transition: .3s;
+            span, path {
+                transition: .3s;
+            }
+            &:hover {
+                background-color: $primary;
+                border-color: transparent;
+                path {
+                    stroke: $white;
+                }
+                span {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    &__extra {
+        display: flex;
+        margin: -7px;
+    }
+
+    &__extra-item {
+        display: flex;
+        align-items: center;
+        margin: 7px;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        line-height: 19px;
+        color: $text;
+        span {
+            display: inline-block;
+            margin-left: 6px;
+        }
+    }
+
+    &__categories {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -3px;
+        li {
+            margin: 3px;
+        }
+        a {
+            display: block;
+            padding: 5px 12px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+            color: $white;
+            background: $secondary;
+            border-radius: 10px;
+        }
+    }
+
+    &__experience {
+        display: flex;
+        align-items: center;
+        background-color: rgba($secondary, .1);
+        border-radius: 12px;
+        padding: 12px 17px;
+        margin-bottom: 13px;
+        margin-top: 16px;
+
+        &--red {
+            background-color: rgba($danger, .1);
+        }
+    }
+
+    &__experience-content {
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        margin-left: 16px;
+    }
+
+    &__experience-img {
+        width: 24px;
+        text-align: center;
+    }
+
+    &__experience-title {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 600;
+    }
+
+    &__experience-text {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    &__info {
+        font-family: 'Inter', sans-serif;
+        margin: auto 0;
+        &--empty {
+            .worker-item__info-title {
+                color: $grey;
+            }
+            .worker-item__info-text {
+                color: $text;
+                font-weight: 600;
+            }
+        }
+    }
+
+    &__info-title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 6px;
+    }
+
+    &__info-text {
+        color: rgba($text, .7);
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: 400;
+    }
+
+    &__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -6px;
+        padding-top: 16px;
+    }
+
+    &__btn {
+        margin: 6px;
+        flex-grow: 1;
+        &.btn--grey {
+            padding: 14px 32px;
+        }
+    }
+}

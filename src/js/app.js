@@ -1,3 +1,5 @@
+document.body.classList.add('preload');
+
 window.addEventListener('DOMContentLoaded', function() {
     function isWebp() {
         function testWebP(callback) {
@@ -104,20 +106,74 @@ window.addEventListener('DOMContentLoaded', function() {
     }
 
     function initAccordions() {
-        const $triggers = document.querySelectorAll('.accordion__item-head');
+        const $triggers = document.querySelectorAll('[data-accordion-trigger]');
     
         if ($triggers.length > 0) {
             $triggers.forEach(item => {
                 item.addEventListener('click', function() {
-                    item.closest('.accordion__item').classList.toggle('active');
-                    item.closest('.accordion__item').querySelector('.plus').classList.toggle('active');
+                    item.closest('[data-accordion]').classList.toggle('active');
                 })
             })
         }
+    }
+
+    function initSelects() {
+        const $selects = document.querySelectorAll('.custom-select');
+        $selects.forEach(select => {
+            NiceSelect.bind(select);
+        })
+    }
+
+    function disableTransitionBeforeLoad() {
+        document.body.classList.remove('preload');
+    }
+
+    function initFilterMore() {
+        const $filterMoreBtn = document.querySelector('.filter__btn');
+
+        $filterMoreBtn.addEventListener('click', function(e) {
+            $filterMoreBtn.classList.add('hidden');
+            e.target.closest('.filter__categories').classList.add('active');
+        })
+    }
+
+    function initFilter() {
+        const $filterSlider = document.querySelector('.filter__slider-element')
+        const $filterFrom = document.querySelector('#filter-age-from')
+        const $filterTo = document.querySelector('#filter-age-to')
+            
+            let min = Number($filterSlider.dataset.min);
+            let max = Number($filterSlider.dataset.max);
+
+            const filterSlider = noUiSlider.create($filterSlider, {
+                start: [min + 4, max - 4],
+                connect: true,
+                step: 1,
+                range: {
+                    'min': min,
+                    'max': max
+                }
+            });
+
+            filterSlider.on('update', function (values, handle) {
+                $filterFrom.value = Math.floor(values[0]);
+                $filterTo.value = Math.floor(values[1]);
+            });
+
+            $filterFrom.addEventListener('change', function(e) {
+                filterSlider.set([e.target.value, null]);
+            })
+            $filterTo.addEventListener('change', function(e) {
+                filterSlider.set([null, e.target.value]);
+            })
     }
 
     isWebp();
     initMenu();
     initModals();
     initAccordions();
+    initSelects();
+    initFilter();
+    initFilterMore();
+    disableTransitionBeforeLoad();
 })

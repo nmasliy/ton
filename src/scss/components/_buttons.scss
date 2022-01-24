@@ -47,6 +47,31 @@
         }
     }
 
+    &--light {
+        background-color: rgba(48, 112, 166, 0.1);
+        color:#3070A6;
+
+        @media screen and (min-width: $mobileBreakpoint) {
+            &:hover {
+                color: $main;
+                background-color: $white;
+                border-color: $main;
+            }
+        }
+    }
+
+    &--grey {
+        background-color: $grey-bg;
+        color: $main;
+
+        @media screen and (min-width: $mobileBreakpoint) {
+            &:hover {
+                background-color: transparent;
+                border-color: $main;
+            }
+        }
+    }
+
     &--secondary {
         background-color: $secondary;
         color: $white;

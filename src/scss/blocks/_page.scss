@@ -1,0 +1,34 @@
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.page {
+    flex: 1 1 auto;
+    padding-top: 70px;
+
+    &__search {
+        margin-bottom: 23px;
+    }
+
+    &__aside {
+        width: 303px;
+    }
+    
+    &__content {
+        width: calc(100% - 317px);
+        margin-right: 14px;
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding-top: 16px;
+    }
+}

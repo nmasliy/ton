@@ -47,9 +47,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 input[type="number"] {
     -moz-appearance: textfield;
 }
-input::-webkit-outer-spin-btnon,
-input::-webkit-inner-spin-btnon {
-    -webkit-appearance: none;
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
 }
 // /Remove input number icon
 

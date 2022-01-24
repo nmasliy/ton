@@ -2,6 +2,10 @@
 @import 'custom-reset';
 @import 'config';
 
+// *Libs
+@import 'libs/nice-select2';
+@import 'libs/nouislider';
+
 // *Components
 @import 'components/buttons';
 @import 'components/header-menu';
@@ -9,12 +13,16 @@
 @import 'components/accordion';
 @import 'components/pagination';
 
-
 // *Blocks
+@import 'blocks/page';
 @import 'blocks/header';
 @import 'blocks/hero';
 @import 'blocks/steps';
 @import 'blocks/common';
+@import 'blocks/filter';
+@import 'blocks/page-search';
+@import 'blocks/filter';
+@import 'blocks/workers';
 @import 'blocks/footer';
 
 // *Media

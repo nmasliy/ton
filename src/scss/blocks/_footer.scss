@@ -65,6 +65,9 @@
             color: $text;
             font-size: 15px;
             line-height: 20px;
+            a {
+                display: block;
+            }
             li {
                 margin-bottom: 10px;
                 &:last-child {

@@ -7,7 +7,7 @@ $grey-bg: #F8F9FB;
 $primary: #3B86C6;
 $secondary: #97CA3E;
 $white: #fff;
-$black: #000;
+$black: #333;
 $danger: #CA573E;
 $red: #c51818;
 $green: #2e6f1a;
@@ -30,8 +30,16 @@ input, textarea {
     display: inline-block;
     background-color: $white;
     border-radius: 10px;
-    padding: 15px 30px;
+    padding: 21px 30px;
+    border-radius: 16px;
+    border: 1px solid #D1D9EA;
+    font-size: 16px;
+    line-height: 19px;
+    color: $main;
 
+    &::placeholder {
+        color: $grey;
+    }
     // *Дополнительные классы для валидации
     &.invalid {
         color: $red;
@@ -106,20 +114,6 @@ h1.title {
     line-height: 51px;
 }
 
-.page-wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-}
-
-.main {
-    flex: 1 1 auto;
-    padding-top: 70px;
-}
-
 .section-category {
     display: inline-block;
     min-width: 118px;
@@ -132,4 +126,13 @@ h1.title {
     background-color: rgba($secondary, .1);
     color: $secondary;
     border-radius: 10px;
+}
+
+.preload {
+    * {
+        transition: none !important;
+    }
+}
+.hidden {
+    display: none !important;
 }
