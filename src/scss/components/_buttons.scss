@@ -53,21 +53,21 @@
 
         @media screen and (min-width: $mobileBreakpoint) {
             &:hover {
-                color: $main;
+                color: $text;
                 background-color: $white;
-                border-color: $main;
+                border-color: $text;
             }
         }
     }
 
     &--grey {
         background-color: $grey-bg;
-        color: $main;
+        color: $text;
 
         @media screen and (min-width: $mobileBreakpoint) {
             &:hover {
                 background-color: transparent;
-                border-color: $main;
+                border-color: $text;
             }
         }
     }

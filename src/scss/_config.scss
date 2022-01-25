@@ -1,7 +1,7 @@
 // *Vars
 // !Colors
-$main: #303757;
-$text: #43475C;
+$text: #303757;
+$text-2: #43475C;
 $grey: #8C8F9F;
 $grey-bg: #F8F9FB;
 $primary: #3B86C6;
@@ -22,7 +22,7 @@ body {
     font-weight: 600;
     font-size: 14px;
     line-height: 1.4; 
-    color: $main;
+    color: $text;
     background-color: $white;
 }
 
@@ -35,7 +35,7 @@ input, textarea {
     border: 1px solid #D1D9EA;
     font-size: 16px;
     line-height: 19px;
-    color: $main;
+    color: $text;
 
     &::placeholder {
         color: $grey;
@@ -65,10 +65,6 @@ textarea {
 
 button {
     cursor: pointer;
-}
-
-section {
-    overflow: hidden;
 }
 
 p {
@@ -135,4 +131,11 @@ h1.title {
 }
 .hidden {
     display: none !important;
+}
+
+.tag-box {
+    background-color: rgba($secondary, 0.1);
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: $secondary;
 }
