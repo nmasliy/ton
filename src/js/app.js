@@ -131,20 +131,23 @@ window.addEventListener('DOMContentLoaded', function() {
     function initFilterMore() {
         const $filterMoreBtn = document.querySelector('.filter__btn');
 
-        $filterMoreBtn.addEventListener('click', function(e) {
-            $filterMoreBtn.classList.add('hidden');
-            e.target.closest('.filter__categories').classList.add('active');
-        })
+        if ($filterMoreBtn) {
+            $filterMoreBtn.addEventListener('click', function(e) {
+                $filterMoreBtn.classList.add('hidden');
+                e.target.closest('.filter__categories').classList.add('active');
+            })
+        }
     }
 
     function initFilter() {
         const $filterSlider = document.querySelector('.filter__slider-element')
         const $filterFrom = document.querySelector('#filter-age-from')
         const $filterTo = document.querySelector('#filter-age-to')
-            
+
+        if ($filterSlider) {
             let min = Number($filterSlider.dataset.min);
             let max = Number($filterSlider.dataset.max);
-
+    
             const filterSlider = noUiSlider.create($filterSlider, {
                 start: [min + 4, max - 4],
                 connect: true,
@@ -154,18 +157,19 @@ window.addEventListener('DOMContentLoaded', function() {
                     'max': max
                 }
             });
-
+    
             filterSlider.on('update', function (values, handle) {
                 $filterFrom.value = Math.floor(values[0]);
                 $filterTo.value = Math.floor(values[1]);
             });
-
+    
             $filterFrom.addEventListener('change', function(e) {
                 filterSlider.set([e.target.value, null]);
             })
             $filterTo.addEventListener('change', function(e) {
                 filterSlider.set([null, e.target.value]);
             })
+        }
     }
 
     isWebp();
