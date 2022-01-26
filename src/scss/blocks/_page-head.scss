@@ -1,0 +1,12 @@
+.page-head {
+    background-color: $primary;
+    padding: 35px;
+
+    &__title {
+        font-weight: 900;
+        font-size: 102px;
+        line-height: 128px;
+        color: rgba($white, 0.05);
+        text-align: right;
+    }
+}

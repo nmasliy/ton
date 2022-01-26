@@ -30,6 +30,7 @@
     &__img {
         img {
             width: 129px;
+            border-radius: 50%;
         }
     }
 
@@ -56,61 +57,7 @@
     }
 
     &__employment {
-        display: inline-flex;
-        align-items: center;
-        border: 0.5px solid #D1D9EA;
-        border-radius: 8px;
-        padding: 8px 16px;
         margin-bottom: 12px;
-
-        img, svg {
-            flex-shrink: 0;
-        }
-
-        span {
-            display: inline-block;
-            font-family: 'Inter', sans-serif;
-            font-size: 16px;
-            line-height: 19px;
-            color: $primary;
-            margin-left: 6px;
-        }
-
-        @media screen and (min-width: $mobileBreakpoint) {
-            transition: .3s;
-            span, path {
-                transition: .3s;
-            }
-            &:hover {
-                background-color: $primary;
-                border-color: transparent;
-                path {
-                    stroke: $white;
-                }
-                span {
-                    color: $white;
-                }
-            }
-        }
-    }
-
-    &__extra {
-        display: flex;
-        margin: -7px;
-    }
-
-    &__extra-item {
-        display: flex;
-        align-items: center;
-        margin: 7px;
-        font-family: 'Inter', sans-serif;
-        font-size: 16px;
-        line-height: 19px;
-        color: $text-2;
-        span {
-            display: inline-block;
-            margin-left: 6px;
-        }
     }
 
     &__categories {
@@ -133,39 +80,8 @@
     }
 
     &__experience {
-        display: flex;
-        align-items: center;
-        background-color: rgba($secondary, .1);
-        border-radius: 12px;
-        padding: 12px 17px;
         margin-bottom: 13px;
         margin-top: 16px;
-
-        &--red {
-            background-color: rgba($danger, .1);
-        }
-    }
-
-    &__experience-content {
-        font-family: 'Inter', sans-serif;
-        font-weight: 400;
-        margin-left: 16px;
-    }
-
-    &__experience-img {
-        width: 24px;
-        text-align: center;
-    }
-
-    &__experience-title {
-        font-size: 16px;
-        line-height: 19px;
-        font-weight: 600;
-    }
-
-    &__experience-text {
-        font-size: 13px;
-        line-height: 20px;
     }
 
     &__info {
