@@ -1,4 +1,10 @@
 @media screen and (max-width: 1160px) {
+    .company-head  {
+        &__img {
+            width: 180px;
+            height: 180px;
+        }
+    }
     .worker-head {
         &__speciality {
             font-size: 17px;
@@ -100,6 +106,26 @@
 }
 
 @media screen and (max-width: 1024px) {
+    .company-head {
+        &__img {
+            width: 140px;
+            height: 140px;
+        }
+        &__benefits {
+            padding: 20px;
+        }
+        &__benefits-list li span {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        &__benefits-list:first-child {
+            margin-right: 10px;
+        }
+        &__link {
+            font-size: 15px;
+            line-height: 18px;
+        }
+    }
     .page-head__title {
         font-size: 78px;
         line-height: 106px;
@@ -237,6 +263,32 @@
 }
 
 @media screen and (max-width: $mobileBreakpoint) { // 768
+    .page-foot {
+        flex-direction: column;
+        &__btn {
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+    }
+    .company-head {
+        &__left {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        &__right {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        &__inner {
+            margin: 0;
+        }
+        &__link img,
+        &__link svg {
+            width: 18px;
+        }
+    }
     .page-head {
         padding: 30px 15px;
         &__title {
@@ -367,6 +419,41 @@
 }
 
 @media screen and (max-width: 600px) {
+    .company-content {
+        &__title {
+            margin-bottom: 20px;
+        }
+    }
+    .company-head {
+        padding-bottom: 40px;
+        &__left {
+            flex-direction: column;
+        }
+        &__info {
+            margin-left: 0;
+        }
+        &__img {
+            width: 120px;
+            height: 120px;
+        }
+        &__img-wrapper {
+            margin-top: -40px;
+            text-align: left;
+        }
+        &__benefits {
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
+    .vacancy {
+        &__title {
+            font-size: 20px;
+            line-height: 24px;
+        }
+        &__link {
+            padding: 20px;
+        }
+    }
     .page-head {
         padding: 15px;
         &__title {
@@ -461,6 +548,33 @@
 } 
 
 @media screen and (max-width: 500px) {
+    .company-head {
+        &__benefits {
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+        &__benefits-list {
+            margin-bottom: 15px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &:first-child {
+                margin-right: 0;
+            }
+        }
+    }
+    .vacancy {
+        &__head {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__info {
+            margin-bottom: 15px;
+        }
+        &__tag {
+            margin-left: 0;
+        }
+    }
     .footer {
         &__policy-item {
             display: inline-block;
@@ -481,6 +595,17 @@
 }
 
 @media screen and (max-width: 400px) {
+    .vacancy {
+        &__foot {
+            flex-direction: column;
+        }
+        &__salary {
+            margin-bottom: 15px;
+        }
+        &__geo {
+            margin-left: 0;
+        }
+    }
     .worker-item {
         &__head {
             flex-direction: column;

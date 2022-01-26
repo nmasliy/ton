@@ -134,10 +134,26 @@ h1.title {
 }
 
 .tag-box {
+    display: inline-block;
     background-color: rgba($secondary, 0.1);
     border-radius: 10px;
     padding: 5px 10px;
     color: $secondary;
+
+    &--red {
+        background-color: rgba($red, 0.1);
+        color: $red;
+    }
+
+    &--flex {
+        display: inline-flex;
+        align-items: center;
+        padding-left: 12px;
+        padding-right: 12px;
+        span {
+            margin-left: 4px;
+        }
+    }
 }
 
 .worker-extra {
@@ -197,7 +213,6 @@ h1.title {
     }
 }
 
-
 .employment-btn {
     display: inline-flex;
     align-items: center;
@@ -234,4 +249,23 @@ h1.title {
             }
         }
     }
+}
+
+.page-inner-container {
+    max-width: 830px;
+    &--center {
+        margin: 0 auto;
+    }
+}
+
+.page-foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-bottom: 48px;
+    &__btn {
+        margin-right: 30px;
+    }
+    
 }
