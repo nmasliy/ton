@@ -1,41 +1,17 @@
 .modal {
-    color: $text;
-    &__img {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    &__text {
-        font-weight: 500;
-        font-size: 16px;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-    &__btn {
-        font-weight: 600;
-        font-size: 14px;
-        max-width: 400px;
-        margin: 0 auto;
-        margin-top: 10px;
-    }
-    &__title {
-        font-weight: 600;
-        font-size: 36px;
-        line-height: 51px;
-        text-align: center;
-        margin-bottom: 45px;
-    }
     &__overlay {
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgba(52, 50, 53, 0.81);
+        background: rgba(250, 252, 255, 0.68);
+        backdrop-filter: blur(4px);
         display: flex;
         z-index: 20;
     }
     &__container {
-        max-width: 730px;
+        max-width: 680px;
         max-height: 90vh;
         overflow: auto;
         -webkit-overflow-scrolling: touch;
@@ -48,8 +24,10 @@
         width: 100%;
         height: 100%;
         background-color: $white;
-        padding: 64px 93px;
-        border-radius: 5px;
+        padding: 28px;
+        padding-bottom: 37px;
+        box-shadow: 0px 4px 53px rgba(200, 200, 200, 0.25);
+        border-radius: 12px;
         position: relative;
     }
     &__content {
@@ -59,12 +37,124 @@
     &__close {
         padding: 0;
         position: absolute;
-        right: 14px;
-        top: 14px;
+        right: 24px;
+        top: 32px;
         border: none;
         background: 0;
     }
-    
+}
+
+.modal-signup {
+    &__title {
+        font-weight: 900;
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 18px;
+    }
+
+    &__button {
+        display: block;
+        background-color: rgba(59, 134, 198, 0.1);
+        border-radius: 12px;
+        padding: 26px;
+        text-align: center;
+        color: $primary;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 24px;
+        img {
+            margin-bottom: 12px;
+        }
+
+        @media screen and (min-width: $mobileBreakpoint) {
+            transition: .3s;
+            img, div {
+                transition: .3s;
+            }
+            &:hover {
+                background-color: rgba(59, 134, 198, 0.2);
+                img {
+                    transform: translateY(2px);
+                }
+                div {
+                    transform: translateY(-2px);
+                }
+            }
+        }
+    }
+
+    &__who {
+        display: flex;
+        background-color: $grey-bg;
+        border-radius: 16px;
+        margin-bottom: 16px;
+        padding: 4px;
+    }
+
+    &__who-item-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 18px 20px;
+        border-radius: 12px;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 20px;
+        color: $grey;
+        transition: .3s;
+        
+        svg {
+            flex-shrink: 0;
+        }
+        path {
+            transition: .3s;
+        }
+        span {
+            margin-left: 10px;
+        }
+    }
+
+    &__who-item {
+        width: 50%;
+        cursor: pointer;
+
+        @media screen and (min-width: $mobileBreakpoint) {
+            &:nth-child(1):hover {
+                path {
+                    stroke: $white;
+                }
+            }
+            &:nth-child(2):hover {
+                path {
+                    fill: $white;
+                }
+            }
+            &:hover .modal-signup__who-item-inner {
+                background-color: $primary;
+                color: $white;
+            }
+        }
+
+        input {
+            display: none;
+            &:checked ~ .modal-signup__who-item-inner {
+                background-color: $primary;
+                color: $white;
+
+                path {
+                    stroke: $white;
+                }
+            }
+        }
+        &:nth-child(2) {
+            input:checked ~ .modal-signup__who-item-inner path {
+                fill: $white;
+                stroke: none;
+            }
+        }
+    }
+
 }
 
 /**************************\

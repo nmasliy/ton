@@ -1,0 +1,87 @@
+.form {
+    &__checkbox {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        line-height: 19px;
+        color: $grey;
+        font-family: 'Inter', sans-serif;
+
+        span {
+            margin-right: 12px;
+        }
+        a {
+            text-decoration-line: underline;
+            color: #3070A6;
+        }
+        input {
+            display: none;
+            &:checked ~ .form__checkbox-item {
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &__checkbox-item {
+        display: block;
+        position: relative;
+        width: 24px;
+        height: 24px;
+        border-radius: 8px;
+        border: 1px solid #D1D9EA;
+        background-color: $white;
+        flex-shrink: 0;
+        &::after {
+            position: absolute;
+            content: "";
+            left: 50%;
+            top: 50%;
+            width: 24px;
+            height: 24px;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: .3s;
+            background: url('../img/check.svg') center no-repeat;
+        }
+    }
+
+    &__input,
+    textarea {
+        display: inline-block;
+        background-color: $white;
+        border-radius: 10px;
+        padding: 21px 30px;
+        border-radius: 16px;
+        border: 1px solid #D1D9EA;
+        font-size: 16px;
+        line-height: 19px;
+        color: $text;
+    
+        &::placeholder {
+            color: $grey;
+        }
+        // *Дополнительные классы для валидации
+        &.invalid {
+            color: $red;
+            border-color: $red;
+    
+            &::placeholder {
+                color: $red;
+            }
+        }
+        &.valid {
+            color: $green;
+            border-color: $green;
+    
+            &::placeholder {
+                color: $green;
+            }
+        }
+    }
+    
+    textarea {
+        min-height: 150px;
+    }
+}

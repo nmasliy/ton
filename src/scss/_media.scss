@@ -457,6 +457,26 @@
 }
 
 @media screen and (max-width: 600px) {
+    .form {
+        &__checkbox {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+    .modal-signup {
+        &__who-item-inner {
+            padding: 10px;
+        }
+    }
+    .modal {
+        &__inner {
+            padding: 30px 15px;
+        }
+        &__close {
+            right: 15px;
+            top: 30px;
+        }
+    }
     .company-content {
         &__title {
             margin-bottom: 20px;
@@ -656,6 +676,20 @@
 }
 
 @media screen and (max-width: 400px) {
+    .modal-signup {
+        &__button {
+            padding: 15px;
+        }
+        &__who {
+            flex-wrap: wrap;
+        }
+        &__who-item {
+            width: 100%;
+            border-radius: 6px;
+            border: 1px solid $grey;
+            margin-bottom: 5px;
+        }
+    }
     .vacancy-content {
         &__btn, &__foot-btn,
         &__head-right {
