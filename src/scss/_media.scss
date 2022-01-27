@@ -117,6 +117,19 @@
 }
 
 @media screen and (max-width: 1024px) {
+    .section-page {
+        &__inner {
+            flex-direction: column;
+        }
+        &__big {
+            width: 100%;
+        }
+        &__small {
+            width: 100%;
+            margin: 0;
+            margin-bottom: 30px;
+        }
+    }
     .visit-link {
         font-size: 15px;
         line-height: 18px;
@@ -292,6 +305,57 @@
 }
 
 @media screen and (max-width: $mobileBreakpoint) { // 768
+    .cv-item {
+        flex-direction: column;
+        &__categories {
+            justify-content: center;
+        }
+        &__btn {
+            width: auto;
+            margin: 8px;
+            &:first-child {
+                margin-bottom: 0;
+            }
+        }
+        &__box {
+            padding-right: 0;
+        }
+        &__img {
+            width: 100px;
+            height: 100px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        &__experience-box {
+            max-width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: -8px;
+        }
+        &__head {
+            margin-bottom: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+        &__specification {
+            padding-top: 0;
+        }
+        &__left {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        &__right {
+            margin: 0;
+            width: 100%;
+        }
+    }
     .worker-vacancies {
         padding-bottom: 50px;
     }
@@ -531,6 +595,14 @@
     }
     .vacancy {
         padding: 20px;
+
+        &__foot-wrapper {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__foot-btn {
+            margin-top: 20px;
+        }
         &__title {
             font-size: 20px;
             line-height: 24px;
@@ -692,6 +764,43 @@
 }
 
 @media screen and (max-width: 400px) {
+    .company-cv {
+        &__head {
+            font-size: 20px;
+            line-height: 26px;
+            padding: 20px;
+            span {
+                font-size: 17px;
+            }
+        }
+    }
+    .cv-item {
+        padding: 20px 15px;
+        &__subtitle {
+            font-size: 17px;
+            line-height: 21px;
+        }
+        &__categories {
+            justify-content: flex-start;
+        }
+        &__head {
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        &__specification {
+            margin-left: 0;
+        }
+        &__img {
+            margin-bottom: 15px;
+        }
+        &__btn {
+            width: 100%;
+        }
+        &__experience-box {
+            max-width: 100%;
+        }
+    }
     .page-head {
         &__btn {
             width: 100%;

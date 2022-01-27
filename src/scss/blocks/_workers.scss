@@ -60,25 +60,6 @@
         margin-bottom: 12px;
     }
 
-    &__categories {
-        display: flex;
-        flex-wrap: wrap;
-        margin: -3px;
-        li {
-            margin: 3px;
-        }
-        a {
-            display: block;
-            padding: 5px 12px;
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 18px;
-            color: $white;
-            background: $secondary;
-            border-radius: 10px;
-        }
-    }
-
     &__experience {
         margin-bottom: 13px;
         margin-top: 16px;

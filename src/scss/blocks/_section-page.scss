@@ -1,0 +1,17 @@
+.section-page {
+
+    &__inner {
+        display: flex;
+    }
+
+    &__small {
+        flex-shrink: 0;
+        width: 250px;
+        margin-right: 24px;
+    }
+
+    &__big {
+        width: 100%;
+        padding-top: 13px;
+    }
+}

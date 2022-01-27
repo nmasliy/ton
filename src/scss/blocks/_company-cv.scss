@@ -1,0 +1,140 @@
+.company-cv {
+    padding-bottom: 47px;
+
+    &__img-wrapper {
+        text-align: left;
+    }
+
+    &__head {
+        font-weight: 900;
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 15px;
+        background-color: $white;
+        border: 1px solid $grey-bg;
+        box-shadow: 0px 4px 30px rgba(164, 164, 164, 0.1);
+        border-radius: 12px;
+        padding: 30px 37px;
+        margin-top: 11px;
+        span {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: $grey;
+        }
+    }
+
+    &__img {
+        margin-bottom: 20px;
+    }
+    
+    &__geo {
+        margin-left: 0;
+        margin-top: 12px;
+    }
+}
+
+.cv-item {
+    display: flex;
+    align-items: flex-start;
+    background-color: $white;
+    border: 1px solid $grey-bg;
+    box-shadow: 0px 4px 30px rgba(164, 164, 164, 0.1);
+    border-radius: 16px;
+    padding: 20px 20px 31px 20px;
+    margin-bottom: 25px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &__btn {
+        margin-bottom: 15px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__left {
+        width: 37%;
+    }
+
+    &__extra {
+        margin-bottom: 8px;
+    }
+
+    &__head {
+        display: flex;
+    }
+
+    &__experience-box {
+        margin-bottom: 15px;
+    }
+
+    &__img {
+        width: 70px;
+        height: 70px;
+        img {
+            border-radius: 50%;
+        }
+    }
+
+    &__specification {
+        margin-left: 18px;
+        padding-top: 14px;
+    }
+
+    &__right {
+        width: calc(63% - 38px);
+        margin-left: 38px;
+    }
+
+    &__categories {
+        margin-bottom: 24px;
+    }
+
+    &__box {
+        margin-bottom: 22px;
+        padding-right: 20px;
+        p {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__title {
+        font-family: 'Inter', sans-serif;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 22px;
+        color: #3070A6;
+        margin-bottom: 11px;
+        padding-left: 16px;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 5px;
+            background-color: #3070A6;
+            border-radius: 30px;
+            left: 0;
+            top: 0;
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: 400;
+        font-family: 'Inter', sans-serif;
+    }
+
+    &__subtitle {
+        font-family: 'Inter', sans-serif;
+        margin-bottom: 13px;
+        color: $text-2;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
