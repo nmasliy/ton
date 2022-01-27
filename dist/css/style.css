@@ -1180,6 +1180,32 @@ h1.title {
   margin-top: 25px;
 }
 
+.modal-vacancy__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  background: rgba(59, 134, 198, 0.1);
+  border-radius: 14px;
+}
+.modal-vacancy__title {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 23px;
+  max-width: 485px;
+  margin-bottom: 8px;
+}
+.modal-vacancy__text {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #43475C;
+}
+
 /**************************\
     Demo Animation Style
 \**************************/
@@ -3244,6 +3270,10 @@ h1.title {
   }
 }
 @media screen and (max-width: 400px) {
+  .modal-payment__btn {
+    width: 100%;
+    padding: 17px 30px;
+  }
   .modal-payment__head {
     padding: 15px;
     font-size: 16px;
