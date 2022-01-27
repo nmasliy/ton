@@ -15,6 +15,7 @@
 // *Blocks
 @import 'blocks/page';
 @import 'blocks/header';
+@import 'blocks/experience-box';
 @import 'blocks/hero';
 @import 'blocks/steps';
 @import 'blocks/common';
@@ -23,11 +24,14 @@
 @import 'blocks/filter';
 @import 'blocks/workers';
 @import 'blocks/companies';
+@import 'blocks/company-img-box';
 @import 'blocks/page-head';
 @import 'blocks/worker-head';
 @import 'blocks/worker-content';
 @import 'blocks/company-head';
 @import 'blocks/company-content';
+@import 'blocks/vacancy-content';
+@import 'blocks/no-vacancy';
 @import 'blocks/footer';
 
 // *Media

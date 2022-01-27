@@ -1,0 +1,32 @@
+.company-img-box {
+    margin-top: -76px;
+    text-align: center;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $white;
+        border: 3px solid #D1D9EA;
+        border-radius: 20px;
+        width: 243px;
+        height: 243px;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        margin-bottom: 4px;
+        font-weight: 900;
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    &__subtitle {
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        line-height: 19px;
+        color: $grey;
+        margin-bottom: 13px;
+    }
+}

@@ -1,0 +1,40 @@
+.no-vacancy {
+    padding-bottom: 55px;
+    
+    &__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: -20px -40px;
+    }
+
+    &__img {
+        margin: 20px 40px;
+        max-width: 343px;
+    }
+
+    &__content {
+        margin: 20px 40px;
+    }
+
+    &__subtitle {
+        margin-bottom: 3px;
+        color: $primary;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    &__title {
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 900;
+        margin-bottom: 8px;
+    }
+
+    &__text {
+        font-family: 'Inter', sans-serif;
+        color: ($text-2, .7);
+    }
+}

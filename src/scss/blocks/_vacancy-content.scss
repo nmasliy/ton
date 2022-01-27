@@ -1,0 +1,95 @@
+.vacancy-content {
+    padding-bottom: 48px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__about {
+        display: flex;
+        justify-content: flex-end;
+        width: 243px;
+    }
+
+    &__info {
+        width: calc(100% - 243px);
+        padding-right: 45px;
+        padding-top: 22px;
+    }
+
+    &__benefits {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -8px;
+
+        li {
+            display: flex;
+            align-items: center;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            line-height: 19px;
+            border: 1px solid #D1D9EA;
+            border-radius: 8px;
+            margin: 8px;
+            padding: 14px 22px;
+        }
+
+        span {
+            margin-left: 6px;
+        }
+    }
+
+    &__main {
+        padding-top: 35px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        p {
+            margin-bottom: 20px;
+            color: $text-2;
+        }
+        ul {
+            max-width: 566px;
+        }
+    }
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    &__head-left {
+    }
+
+    &__head-right {
+        margin-left: 10px;
+    }
+
+    &__box {
+        margin-bottom: 35px;
+    }
+
+    &__box-title {
+        font-weight: 800;
+        font-size: 22px;
+        line-height: 27px;
+        margin-bottom: 16px;
+        color: $text-2;
+    }
+
+    &__foot {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -10px;
+    }
+
+    &__foot-btn {
+        margin: 10px;
+        padding-left: 38px;
+        padding-right: 38px;
+    }
+} 

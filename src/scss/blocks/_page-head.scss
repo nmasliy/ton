@@ -1,6 +1,9 @@
 .page-head {
     background-color: $primary;
     padding: 35px;
+    display: flex;
+    align-items: center;
+    min-height: 198px;
 
     &__title {
         font-weight: 900;
