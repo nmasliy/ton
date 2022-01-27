@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
     <meta charset="UTF-8">
@@ -9,19 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Mulish:wght@600;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Тест</title>
+    <title>Company admin</title>
 </head>
-<body>
-    <style>
-        .test {
-            font-size: 20px;
-        }
-        .main {
-            padding-top: 150px;
-        }
-    </style>
-    <div class="page-wrapper">
-        <header class="header">
+    <body>
+        <div class="page-wrapper">
+            <header class="header">
     <div class="container">
         <div class="header__inner">
             <a href="./" class="header__logo logo">
@@ -67,28 +59,37 @@
     </div>
     <div class="header__overlay"></div>
 </header>
-        <div class="page">
-            <div class="container test">
-                <div style="color: blueviolet;"><a href="index.html">Главная</a></div>
-                <div  style="color: blueviolet;"><a href="workers.html">Workers</a></div>
-                <div style="color: blueviolet;"><a href="worker.html">Worker</a></div>
-                <div><a href="worker-admin.html">Worker admin</a></div>
-                <div><a href="worker-info.html">Worker info</a></div>
-                <div  style="color: blueviolet;"><a href="companies.html">Companies</a></div>
-                <div style="color:blueviolet";><a href="company.html">Company</a></div>
-                <div style="color:blueviolet";><a href="company-admin.html">Company admin</a></div>
-                <div><a href="company-info.html">Company info</a></div>
-                <div style="color:blueviolet";><a href="company-empty.html">Company empty</a></div>
-                <div style="color:blueviolet";><a href="vacancy.html">Vacancy</a></div>
-                <div style="color:blueviolet";><a href="no-vacancy.html">No vacancy</a></div>
-                <hr>
-                <div style="color:blueviolet";><a href="#" data-micromodal-trigger="modal-signup">Modal Sign up</a></div>
-                <div style="color:blueviolet";><a href="#" data-micromodal-trigger="modal-payment">Modal Payment</a></div>
-                <div style="color:blueviolet";><a href="#" data-micromodal-trigger="modal-create-vacancy">Modal Create vacancy</a></div>
-                <div style="color:blueviolet";><a href="loading.html">Loading</a></div>
+            <div class="page">
+                <main class="main">
+                    <section class="page-head page-head--admin">
+                        <div class="container">
+                            <div class="page-head__inner">
+                                <div class="page-head__btn-wrapper">
+                                    <a href="#" class="page-head__btn btn btn--xl btn--white">Edit profile</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="company-empty">
+                        <div class="container">
+                            <div class="company-empty__inner">
+                                <div class="company-empty__img-wrapper company-img-box">
+                                    <div class="company-empty__img company-img-box__item">
+                                        <img width="115" height="115" src="img/company-empty.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="company-empty__title">Empty Profile</div>
+                                <div class="company-empty__subtitle">Company didn’t fill up info yet</div>
+                                <div class="company-empty__buttons">
+                                    <a href="#" class="company-empty__btn btn btn--xl btn--outline">Fill up</a>
+                                    <a href="#" class="company-empty__btn btn btn--xl btn--default">Publish vacancy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
             </div>
-        </div>
-        <footer class="footer">
+            <footer class="footer">
     <div class="footer__main">
         <div class="container">
             <div class="footer__inner">
@@ -136,8 +137,8 @@
         </div>
     </div>
 </footer>
-    </div>
-    <div class="modal modal-signup micromodal-slide" id="modal-signup">
+        </div>
+        <div class="modal modal-signup micromodal-slide" id="modal-signup">
     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
         <div class="modal__container">
             <div class="modal__inner">
@@ -186,78 +187,9 @@
         </div>
     </div>
 </div>
-<div class="modal modal-vacancy micromodal-slide" id="modal-create-vacancy">
-    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-        <div class="modal__container">
-            <div class="modal__inner">
-                <div class="modal__content">
-                    <button class="modal__close" data-micromodal-close aria-label="Close this dialog window">
-                        <img src="img/close.svg" alt="Close" data-micromodal-close>
-                    </button>
-                    <div class="modal-vacancy__img">
-                        <img src="img/hourglass.svg" width="40" height="40" alt="">
-                    </div>
-                    <div class="modal-vacancy__title">
-                        Как только вакансия добавлена, она отображается на странице “Ваши вакансии”
-                    </div>
-                    <div class="modal-vacancy__text">
-                        Перед публикацией, каждое объявление проходит модерацию.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal modal-payment micromodal-slide" id="modal-payment">
-    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-        <div class="modal__container">
-            <div class="modal__inner">
-                <div class="modal__content">
-                    <button class="modal__close" data-micromodal-close aria-label="Close this dialog window">
-                        <img src="img/close.svg" width="18" height="18" alt="Close" data-micromodal-close>
-                    </button>
-                    <div class="modal-payment__title modal__title">Payment</div>
-                    <div class="modal-payment__head">
-                        <img src="img/toncoin.svg" width="42" height="42" alt="">
-                        <div>Для того чтобы разместить вакансию внесите на счет <b>0,5 Toncoin</b></div>
-                    </div>
-                    <form action="#" class="modal-payment__form form">
-                        <div class="modal-payment__item">
-                            <div class="modal-payment__caption">
-                                <img src="img/payment-1.svg" width="40" height="40" alt="">
-                                <span>Отправить 0,5 Toncoin необходимо на кошелек:</span>
-                            </div>
-                            <div class="modal-payment__field">
-                                <button type="button">
-                                    <img src="img/copy.svg" width="24" height="24" alt="Copy text">
-                                </button>
-                                <input class="modal-payment__input form__input">
-                            </div>
-                        </div>
-                        <div class="modal-payment__item">
-                            <div class="modal-payment__caption">
-                                <img src="img/payment-2.svg" width="40" height="40" alt="">
-                                <span>К платежу добавьте комментарий (сообщение)</span>
-                            </div>
-                            <div class="modal-payment__field">
-                                <button type="button">
-                                    <img src="img/copy.svg" width="24" height="24" alt="Copy text">
-                                </button>
-                                <input class="modal-payment__input form__input">
-                            </div>
-                        </div>
-                        <div class="modal-payment__btn-wrapper">
-                            <button class="modal-payment__btn btn btn--lg btn--default">Check payment</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-    <script src="js/nouislider.min.js"></script>
+        <script src="js/nouislider.min.js"></script>
 <script src="js/micromodal.min.js"></script>
 <script src="js/nice-select2.js"></script>
 <script src="js/app.js"></script>
-</body>
+    </body>
 </html>

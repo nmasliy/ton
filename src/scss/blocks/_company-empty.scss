@@ -1,0 +1,36 @@
+.company-empty {
+    padding-bottom: 50px;
+    &__inner {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    &__img-wrapper {
+        margin-top: -103px;
+    }
+
+    &__title {
+        font-weight: 900;
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 6px;
+    }
+
+    &__subtitle {
+        margin-bottom: 30px;
+        color: rgba($text-2, .7);
+    }
+
+    &__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: -5px;
+    }
+
+    &__btn {
+        margin: 5px;
+    }
+}

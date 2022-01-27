@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+    @@include('html/head.html', {
+        "title": "Company admin"
+    })
+    <body>
+        <div class="page-wrapper">
+            @@include('html/header.html', {})
+            <div class="page">
+                <main class="main">
+                    <section class="page-head page-head--admin">
+                        <div class="container">
+                            <div class="page-head__inner">
+                                <div class="page-head__btn-wrapper">
+                                    <a href="#" class="page-head__btn btn btn--xl btn--white">Edit profile</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="company-empty">
+                        <div class="container">
+                            <div class="company-empty__inner">
+                                <div class="company-empty__img-wrapper company-img-box">
+                                    <div class="company-empty__img company-img-box__item">
+                                        <img width="115" height="115" src="@img/company-empty.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="company-empty__title">Empty Profile</div>
+                                <div class="company-empty__subtitle">Company didn’t fill up info yet</div>
+                                <div class="company-empty__buttons">
+                                    <a href="#" class="company-empty__btn btn btn--xl btn--outline">Fill up</a>
+                                    <a href="#" class="company-empty__btn btn btn--xl btn--default">Publish vacancy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+            @@include('html/footer.html', {})
+        </div>
+        @@include('html/modal-signup.html', {})
+        @@include('html/scripts.html', {})
+    </body>
+</html>
