@@ -4,12 +4,25 @@
     display: flex;
     align-items: center;
     min-height: 198px;
+    
+    &--admin {
+        padding: 22px;
+        align-items: flex-start;
+    }
 
     &__title {
         font-weight: 900;
         font-size: 102px;
         line-height: 128px;
         color: rgba($white, 0.05);
+        text-align: right;
+    }
+
+    &__btn {
+        font-size: 16px;
+    }
+
+    &__btn-wrapper {
         text-align: right;
     }
 }

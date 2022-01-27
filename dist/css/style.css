@@ -108,6 +108,13 @@ p:last-child {
   margin-bottom: 0;
 }
 
+[data-tab-content] {
+  display: none;
+}
+[data-tab-content].active {
+  display: block;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -610,8 +617,22 @@ h1.title {
     color: #fff;
   }
 }
+.btn--white {
+  background-color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .btn--white:hover {
+    background-color: #3070A6;
+    color: #fff;
+    border-color: #fff;
+  }
+}
 .btn--min-width {
   min-width: 175px;
+}
+.btn--xl {
+  min-width: 243px;
+  padding: 18px 45px;
 }
 .btn--lg {
   padding: 18px 45px;
@@ -2076,11 +2097,21 @@ h1.title {
   align-items: center;
   min-height: 198px;
 }
+.page-head--admin {
+  padding: 22px;
+  align-items: flex-start;
+}
 .page-head__title {
   font-weight: 900;
   font-size: 102px;
   line-height: 128px;
   color: rgba(255, 255, 255, 0.05);
+  text-align: right;
+}
+.page-head__btn {
+  font-size: 16px;
+}
+.page-head__btn-wrapper {
   text-align: right;
 }
 
@@ -2307,8 +2338,60 @@ h1.title {
   margin-bottom: 30px;
   color: #3B86C6;
 }
+.company-content__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.company-content__tabs-buttons {
+  display: flex;
+}
+.company-content__tabs-btn {
+  position: relative;
+  margin-left: 24px;
+  color: #8C8F9F;
+  font-size: 18px;
+  line-height: 23px;
+  transition: color 0.3s;
+}
+.company-content__tabs-btn:first-child {
+  margin-left: 0;
+}
+.company-content__tabs-btn::after {
+  position: absolute;
+  content: "";
+  bottom: -9px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 0;
+  background-color: #3B86C6;
+  border-radius: 53px;
+  transition: 0.3s;
+  height: 3px;
+}
+.company-content__tabs-btn.active {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 23px;
+  position: relative;
+  color: #3B86C6;
+}
+.company-content__tabs-btn.active::after {
+  width: 78%;
+}
+@media screen and (min-width: 768px) {
+  .company-content__tabs-btn:hover {
+    color: #3B86C6;
+  }
+}
+.company-content__head-btn {
+  margin-left: 15px;
+}
 
 .vacancy {
+  position: relative;
   background-color: #fff;
   border: 1px solid #F8F9FB;
   box-shadow: 0px 4px 30px rgba(164, 164, 164, 0.1);
@@ -2324,6 +2407,19 @@ h1.title {
     box-shadow: 0px 4px 35px rgba(164, 164, 164, 0.25);
   }
 }
+.vacancy__btn {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+@media screen and (min-width: 768px) {
+  .vacancy__btn {
+    transition: 0.3s ease;
+  }
+  .vacancy__btn:hover {
+    transform: scale(1.1);
+  }
+}
 .vacancy:last-child {
   margin-bottom: 0;
 }
@@ -2335,6 +2431,7 @@ h1.title {
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 11px;
+  padding-right: 40px;
 }
 .vacancy__info {
   display: flex;
@@ -3076,6 +3173,12 @@ h1.title {
     top: 30px;
   }
 
+  .company-content__head {
+    flex-direction: column;
+  }
+  .company-content__tabs-buttons {
+    margin-bottom: 30px;
+  }
   .company-content__title {
     margin-bottom: 20px;
   }
@@ -3270,6 +3373,23 @@ h1.title {
   }
 }
 @media screen and (max-width: 400px) {
+  .company-content__head-btn {
+    width: 100%;
+  }
+  .company-content__tabs-btn {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .company-content__tabs-btn:last-child {
+    margin-bottom: 0;
+  }
+  .company-content__tabs-buttons {
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+
   .modal-payment__btn {
     width: 100%;
     padding: 17px 30px;

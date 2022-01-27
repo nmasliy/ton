@@ -37,6 +37,13 @@ p {
     }
 }
 
+[data-tab-content] {
+    display: none;
+    &.active {
+        display: block;
+    }
+}
+
 .overflow-hidden {
     overflow: hidden;
 

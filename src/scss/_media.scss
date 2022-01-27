@@ -478,6 +478,12 @@
         }
     }
     .company-content {
+        &__head {
+            flex-direction: column;
+        }
+        &__tabs-buttons {
+            margin-bottom: 30px;
+        }
         &__title {
             margin-bottom: 20px;
         }
@@ -676,6 +682,24 @@
 }
 
 @media screen and (max-width: 400px) {
+    .company-content {
+        &__head-btn {
+            width: 100%;
+        }
+        &__tabs-btn {
+            font-size: 16px;
+            line-height: 20px;
+            margin: 0;
+            margin-bottom: 20px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &__tabs-buttons {
+            flex-direction: column;
+            margin-bottom: 25px;
+        }
+    }
     .modal-payment {
         &__btn {
             width: 100%;

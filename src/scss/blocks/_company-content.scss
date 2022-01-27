@@ -6,9 +6,70 @@
         margin-bottom: 30px;
         color: $primary;
     }
+
+    &__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+
+    &__tabs-buttons {
+        display: flex;
+    }
+
+    &__tabs-btn {
+        position: relative;
+        margin-left: 24px;
+        color: $grey;
+        font-size: 18px;
+        line-height: 23px;
+        transition: color .3s;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            bottom: -9px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 0;
+            background-color: $primary;
+            border-radius: 53px;
+            transition: .3s;
+            height: 3px;
+        }
+
+        &.active {
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 23px;
+            position: relative;
+            color: $primary;
+
+            &::after {
+                width: 78%;
+            }
+        }
+
+        @media screen and (min-width: $mobileBreakpoint) {
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+
+    &__head-btn {
+        margin-left: 15px;
+    }
 }
 
 .vacancy {
+    position: relative;
     background-color: $white;
     border: 1px solid $grey-bg;
     box-shadow: 0px 4px 30px rgba(164, 164, 164, 0.1);
@@ -20,6 +81,19 @@
         transition: .3s ease;
         &:hover {
             box-shadow: 0px 4px 35px rgba(164, 164, 164, 0.25);
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+
+        @media screen and (min-width: $mobileBreakpoint) {
+            transition: .3s ease;
+            &:hover {
+                transform: scale(1.1);
+            }
         }
     }
 
@@ -36,6 +110,7 @@
         align-items: center;
         flex-wrap: wrap;
         margin-bottom: 11px;
+        padding-right: 40px;
     }
 
     &__info {

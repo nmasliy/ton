@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+    @@include('html/head.html', {
+        "title": "Company admin"
+    })
+    <body>
+        <div class="page-wrapper">
+            @@include('html/header.html', {})
+            <div class="page">
+                <main class="main">
+                    <section class="page-head page-head--admin">
+                        <div class="container">
+                            <div class="page-head__inner">
+                                <div class="page-head__btn-wrapper">
+                                    <a href="#" class="page-head__btn btn btn--xl btn--white">Edit profile</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="company-head">
+                        <div class="container">
+                            <div class="company-head__inner">
+                                <div class="company-head__left">
+                                    <div class="company-head__img-wrapper company-img-box">
+                                        <div class="company-head__img company-img-box__item">
+                                            <img src="@img/company-1.svg" width="145" height="62" alt="amazon logo">
+                                        </div>
+                                        <a href="#" class="company-head__img-link visit-link">
+                                            <img src="@img/site.svg" alt="">
+                                            <span>Visit website</span>
+                                        </a>
+                                    </div>
+                                    <div class="company-head__info">
+                                        <div class="company-head__info-head">
+                                            <div class="company-head__title">Amazon Inc</div>
+                                            <div class="company-head__tag tag-box">10 000 open vacany</div>
+                                        </div>
+                                        <div class="company-head__text">
+                                            Marianne or husbands if at stronger ye. Considered is as middletons uncommonly. Promotion perfectly ye consisted so. His chatty dining for effect ladies active. Equally journey wishing not several behaved chapter she two sir. Deficient procuring favourite extensive you two
+                                        </div>
+                                        <div class="company-head__extra worker-extra">
+                                            <div class="company-head__extra-item worker-extra__item">
+                                                <img src="@img/users.svg" alt="">
+                                                <span>more than 500 employees</span>
+                                            </div>
+                                            <div class="company-head__extra-item worker-extra__item">
+                                                <img src="@img/chart.svg" alt="">
+                                                <span>15 years on the market</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="company-head__right">
+                                    <div class="company-head__benefits">
+                                        <ul class="company-head__benefits-list">
+                                            <li>
+                                                <img src="@img/celebration.svg" alt="">
+                                                <span>Corporate events</span>
+                                            </li>
+                                            <li>
+                                                <img src="@img/heart.svg" alt="">
+                                                <span>Health insurance</span>
+                                            </li>
+                                            <li>
+                                                <img src="@img/tag.svg" alt="">
+                                                <span>Employee discounts</span>
+                                            </li>
+                                        </ul>
+                                        <ul class="company-head__benefits-list">
+                                            <li>
+                                                <img src="@img/gift.svg" alt="">
+                                                <span>Bonuses and premiums</span>
+                                            </li>
+                                            <li>
+                                                <img src="@img/clock.svg" alt="">
+                                                <span>Flexible schedule</span>
+                                            </li>
+                                            <li>
+                                                <img src="@img/dollar.svg" alt="">
+                                                <span>Regular salary review</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="company-content">
+                        <div class="container">
+                            <div class="company-content__inner page-inner-container" data-tab-container>
+                                <div class="company-content__head">
+                                    <div class="company-content__tabs-buttons">
+                                        <button class="company-content__tabs-btn active" data-tab="1" data-tab-title>Opened vacancies</button>
+                                        <button class="company-content__tabs-btn" data-tab="2" data-tab-title>Archieved vacancies</button>
+                                    </div>
+                                    <a href="#" class="company-content__head-btn btn btn--default btn--xl">Publish vacancy</a>
+                                </div>
+                                <ul class="company-content__list active" data-tab-content data-tab="1">
+                                    <li class="vacancy">
+                                        <div class="vacancy__inner">
+                                            <div class="vacancy__head">
+                                                <div class="vacancy__info">
+                                                    <div class="vacancy__info-item">Published 6 hours ago</div>
+                                                    <time class="vacancy__info-item">July, 23 16:00</time>
+                                                </div>
+                                                <div class="vacancy__tag tag-box tag-box--red tag-box--flex">
+                                                    <img src="@img/fire.svg" alt="">
+                                                    <span>Featured</span>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="vacancy__title">Expert consultant on work with clients (EdTech + IT)</a>
+                                            <div class="vacancy__text">
+                                                At the same time, we are expanding the sale! It is worth being able to go beyond the interphone line, learn how to work in person and online, take part in the calls, go to the recruitment at the conference and work well
+                                            </div>
+                                            <div class="vacancy__foot">
+                                                <div class="vacancy__salary">$1200-$1400</div>
+                                                <div class="vacancy__geo">
+                                                    <img src="@img/location.svg" alt="">
+                                                    <span>Estonia, Tallinn</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="vacancy__btn">
+                                            <img src="@img/delete.svg" alt="Delete vacancy">
+                                        </button>
+                                    </li>
+                                    <li class="vacancy">
+                                        <div class="vacancy__inner">
+                                            <div class="vacancy__head">
+                                                <div class="vacancy__info">
+                                                    <div class="vacancy__info-item">Published 6 hours ago</div>
+                                                    <time class="vacancy__info-item">July, 23 16:00</time>
+                                                </div>
+                                                <div class="vacancy__tag tag-box tag-box--red tag-box--flex">
+                                                    <img src="@img/fire.svg" alt="">
+                                                    <span>Featured</span>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="vacancy__title">Expert consultant on work with clients (EdTech + IT)</a>
+                                            <div class="vacancy__text">
+                                                At the same time, we are expanding the sale! It is worth being able to go beyond the interphone line, learn how to work in person and online, take part in the calls, go to the recruitment at the conference and work well
+                                            </div>
+                                            <div class="vacancy__foot">
+                                                <div class="vacancy__salary">$1200-$1400</div>
+                                                <div class="vacancy__geo">
+                                                    <img src="@img/location.svg" alt="">
+                                                    <span>Estonia, Tallinn</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="vacancy__btn">
+                                            <img src="@img/delete.svg" alt="Delete vacancy">
+                                        </button>
+                                    </li>
+                                    <li class="vacancy">
+                                        <div class="vacancy__inner">
+                                            <div class="vacancy__head">
+                                                <div class="vacancy__info">
+                                                    <div class="vacancy__info-item">Published 6 hours ago</div>
+                                                    <time class="vacancy__info-item">July, 23 16:00</time>
+                                                </div>
+                                                <div class="vacancy__tag tag-box tag-box--red tag-box--flex">
+                                                    <img src="@img/fire.svg" alt="">
+                                                    <span>Featured</span>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="vacancy__title">Expert consultant on work with clients (EdTech + IT)</a>
+                                            <div class="vacancy__text">
+                                                At the same time, we are expanding the sale! It is worth being able to go beyond the interphone line, learn how to work in person and online, take part in the calls, go to the recruitment at the conference and work well
+                                            </div>
+                                            <div class="vacancy__foot">
+                                                <div class="vacancy__salary">$1200-$1400</div>
+                                                <div class="vacancy__geo">
+                                                    <img src="@img/location.svg" alt="">
+                                                    <span>Estonia, Tallinn</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="vacancy__btn">
+                                            <img src="@img/delete.svg" alt="Delete vacancy">
+                                        </button>
+                                    </li>
+                                </ul>
+                                <ul class="company-content__list" data-tab-content data-tab="2">
+                                    <li class="vacancy">
+                                        <div class="vacancy__inner">
+                                            <div class="vacancy__head">
+                                                <div class="vacancy__info">
+                                                    <div class="vacancy__info-item">Published 6 hours ago</div>
+                                                    <time class="vacancy__info-item">July, 23 16:00</time>
+                                                </div>
+                                                <div class="vacancy__tag tag-box tag-box--red tag-box--flex">
+                                                    <img src="@img/fire.svg" alt="">
+                                                    <span>Featured</span>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="vacancy__title">Expert consultant on work with clients (EdTech + IT)</a>
+                                            <div class="vacancy__text">
+                                                At the same time, we are expanding the sale! It is worth being able to go beyond the interphone line, learn how to work in person and online, take part in the calls, go to the recruitment at the conference and work well
+                                            </div>
+                                            <div class="vacancy__foot">
+                                                <div class="vacancy__salary">$1200-$1400</div>
+                                                <div class="vacancy__geo">
+                                                    <img src="@img/location.svg" alt="">
+                                                    <span>Estonia, Tallinn</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="vacancy__btn">
+                                            <img src="@img/redo.svg" alt="Delete vacancy">
+                                        </button>
+                                    </li>
+                                    <li class="vacancy">
+                                        <div class="vacancy__inner">
+                                            <div class="vacancy__head">
+                                                <div class="vacancy__info">
+                                                    <div class="vacancy__info-item">Published 6 hours ago</div>
+                                                    <time class="vacancy__info-item">July, 23 16:00</time>
+                                                </div>
+                                                <div class="vacancy__tag tag-box tag-box--red tag-box--flex">
+                                                    <img src="@img/fire.svg" alt="">
+                                                    <span>Featured</span>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="vacancy__title">Expert consultant on work with clients (EdTech + IT)</a>
+                                            <div class="vacancy__text">
+                                                At the same time, we are expanding the sale! It is worth being able to go beyond the interphone line, learn how to work in person and online, take part in the calls, go to the recruitment at the conference and work well
+                                            </div>
+                                            <div class="vacancy__foot">
+                                                <div class="vacancy__salary">$1200-$1400</div>
+                                                <div class="vacancy__geo">
+                                                    <img src="@img/location.svg" alt="">
+                                                    <span>Estonia, Tallinn</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="vacancy__btn">
+                                            <img src="@img/redo.svg" alt="Delete vacancy">
+                                        </button>
+                                    </li>
+                                    <li class="vacancy">
+                                        <div class="vacancy__inner">
+                                            <div class="vacancy__head">
+                                                <div class="vacancy__info">
+                                                    <div class="vacancy__info-item">Published 6 hours ago</div>
+                                                    <time class="vacancy__info-item">July, 23 16:00</time>
+                                                </div>
+                                                <div class="vacancy__tag tag-box tag-box--red tag-box--flex">
+                                                    <img src="@img/fire.svg" alt="">
+                                                    <span>Featured</span>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="vacancy__title">Expert consultant on work with clients (EdTech + IT)</a>
+                                            <div class="vacancy__text">
+                                                At the same time, we are expanding the sale! It is worth being able to go beyond the interphone line, learn how to work in person and online, take part in the calls, go to the recruitment at the conference and work well
+                                            </div>
+                                            <div class="vacancy__foot">
+                                                <div class="vacancy__salary">$1200-$1400</div>
+                                                <div class="vacancy__geo">
+                                                    <img src="@img/location.svg" alt="">
+                                                    <span>Estonia, Tallinn</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="vacancy__btn">
+                                            <img src="@img/redo.svg" alt="Delete vacancy">
+                                        </button>
+                                    </li>
+                                </ul>
+                                <div class="page-foot">
+                                    <a href="#" class="page-foot__btn btn btn--lg btn--default">Load more</a>
+                                    <div class="page-foot__pagination pagination">
+                                        <ul class="pagination__list">
+                                            <li class="pagination__arrow pagination__arrow--prev"><a href="#">Previous</a></li>
+                                            <li class="pagination__item"><a href="#">1</a></li>
+                                            <li class="pagination__dots">...</li>
+                                            <li class="pagination__item"><a href="#">3</a></li>
+                                            <li class="pagination__item active"><a href="#">4</a></li>
+                                            <li class="pagination__item"><a href="#">5</a></li>
+                                            <li class="pagination__dots">...</li>
+                                            <li class="pagination__item"><a href="#">7</a></li>
+                                            <li class="pagination__arrow pagination__arrow--next"><a href="#">Next</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+            @@include('html/footer.html', {})
+        </div>
+        @@include('html/modal-signup.html', {})
+        @@include('html/scripts.html', {})
+    </body>
+</html>
