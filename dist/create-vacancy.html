@@ -67,13 +67,33 @@
                                 <h2 class="vacancy-create__title">Create vacancy</h2>
                                 <form action="#" class="vacancy-create__form form">
                                     <div class="vacancy-create__form-item">
-                                        <label>
-                                            <span>Vacancy</span>
-                                        </label>
-                                        <label>
-                                            <span>Category</span>
+                                        <span class="vacancy-create__caption">Vacancy</span>
+                                        <div class="vacancy-create__select">
+                                            <select class="custom-select">
+                                                <option data-display="Select" selected value="1">IT DEVELOPER</option>
+                                                <option value="1">IT DEVELOPER</option>
+                                                <option value="2">IT DEVELOPER</option>
+                                                <option value="3">IT DEVELOPER</option>
+                                                <option value="4">HR</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="vacancy-create__form-item">
+                                        <span class="vacancy-create__caption">Category</span>
+                                        <div class="form__category">
                                             <input type="text" class="form__input" placeholder="Start to enter">
-                                        </label>
+                                            <button class="form__category-btn" type="button">
+                                                <img src="img/plus.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="vacancy-create__form-item">
+                                        <span class="vacancy-create__caption">Category</span>
+                                        <div class="form__description">
+                                            <div class="form__description-head">
+                                                <textarea placeholder="Description"></textarea>
+                                            </div>
+                                        </div>
                                     </div>
                                 </form>
                             </div>

@@ -119,9 +119,11 @@ window.addEventListener('DOMContentLoaded', function() {
 
     function initSelects() {
         const $selects = document.querySelectorAll('.custom-select');
-        $selects.forEach(select => {
-            NiceSelect.bind(select);
-        })
+        if ($selects.length > 0) {
+            $selects.forEach(select => {
+                NiceSelect.bind(select);
+            })
+        }
     }
 
     function disableTransitionBeforeLoad() {
