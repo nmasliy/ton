@@ -172,6 +172,21 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    function initCopyInputText() {
+        const $copyButtons = document.querySelectorAll('.modal-payment__field button');
+
+        if ($copyButtons.length > 0) {
+            $copyButtons.forEach(item => {
+                item.addEventListener('click', function(e) {
+                    const input = item.nextElementSibling;
+                    input.select();
+                    input.setSelectionRange(0, 99999); /* For mobile devices */
+                    navigator.clipboard.writeText(input.value);
+                })
+            })
+        }
+    }
+
     isWebp();
     initMenu();
     initModals();
@@ -179,5 +194,6 @@ window.addEventListener('DOMContentLoaded', function() {
     initSelects();
     initFilter();
     initFilterMore();
+    initCopyInputText();
     disableTransitionBeforeLoad();
 })

@@ -42,15 +42,16 @@
         border: none;
         background: 0;
     }
-}
 
-.modal-signup {
     &__title {
         font-weight: 900;
         font-size: 22px;
         line-height: 28px;
         margin-bottom: 18px;
     }
+}
+
+.modal-signup {
 
     &__button {
         display: block;
@@ -156,6 +157,84 @@
     }
 
 }
+
+.modal-payment {
+
+    &_item {
+    }
+
+    &__title {
+    }
+
+    &__head {
+        display: flex;
+        align-items: center;
+        margin-bottom: 27px;
+        padding: 20px 26px;
+        color: $text-2;
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        line-height: 22px;
+        background-color: rgba(59, 134, 198, 0.1);
+        border-radius: 8px;
+        img {
+            flex-shrink: 0;
+        }
+        div {
+            margin-left: 19px;
+            max-width: 380px;
+        }
+        b {
+            font-weight: 800;
+        }
+    }
+
+    &__caption {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        line-height: 19px;
+        color: $text-2;
+        span {
+            margin-left: 16px;
+        }
+    }
+
+    &__item {
+        margin-bottom: 20px;
+    }
+
+    &__field {
+        position: relative;
+        button {
+            position: absolute;
+            right: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__input {
+        padding: 20px 24px;
+        padding-right: 62px;
+        width: 100%;
+        border: 1px solid #E4E4E4;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    &__btn {
+        min-width: 243px;
+    }
+
+    &__btn-wrapper {
+        text-align: right;
+        margin-top: 25px;
+    }
+}
+
+
 
 /**************************\
     Demo Animation Style

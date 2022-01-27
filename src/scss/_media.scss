@@ -676,6 +676,13 @@
 }
 
 @media screen and (max-width: 400px) {
+    .modal-payment {
+        &__head {
+            padding: 15px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
     .modal-signup {
         &__button {
             padding: 15px;
