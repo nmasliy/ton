@@ -6,6 +6,10 @@
         line-height: 19px;
         color: $grey;
         font-family: 'Inter', sans-serif;
+        margin-bottom: 18px;
+        &:last-child {
+            margin-bottom: 0;
+        }
 
         span {
             margin-right: 12px;
@@ -47,6 +51,31 @@
         }
     }
 
+    &__checkbox-text {
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        line-height: 19px;
+        color: $text-2;
+    }
+
+    &__description-item {
+        span {
+            color: $grey;
+        }
+        &--flex {
+            display: inline-flex;
+            align-items: center;
+        }
+        &.active {
+            path {
+                stroke: #333333;
+            }
+            span {
+                color: #333333;
+            }
+        }
+    }
+
     &__input,
     textarea {
         display: inline-block;
@@ -83,5 +112,91 @@
     
     textarea {
         min-height: 150px;
+    }
+
+    &__category-field {
+        width: 100%;
+        position: relative;
+        margin-bottom: 20px;
+        input {
+            width: 100%;
+        }
+    }
+
+    &__category-btn {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__category-items {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -8px;
+    }
+
+    &__category-item {
+        position: relative;
+        margin: 8px;
+        border: 1px solid #D1D9EA;
+        border-radius: 8px;
+        padding: 14px 60px 14px 22px;
+        font-size: 16px;
+        line-height: 19px;
+        font-family: 'Inter', sans-serif;
+    }
+
+    &__category-item-btn {
+        position: absolute;
+        right: 18px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__description {
+        border: 1px solid #D1D9EA;
+        border-radius: 12px;
+        textarea {
+            padding-left: 27px;
+            padding-right: 18px;
+            font-size: 16px;
+            line-height: 19px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            width: 100%;
+            border: none;
+        }
+    }
+
+    &__description-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        border-radius: 12px 12px 0 0;
+        background-color: $grey-bg;
+        padding: 11px 18px 11px 27px;
+    }
+
+    &__description-col {
+        margin: -4px -12px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__description-item {
+        margin: 4px 12px;
+        display: flex;
+        align-items: center;
+
+        span {
+            line-height: normal;
+        }
+        
+        svg, img {
+            flex-shrink: 0;
+            margin-right: 9px;
+        }
     }
 }

@@ -305,6 +305,12 @@
 }
 
 @media screen and (max-width: $mobileBreakpoint) { // 768
+    .vacancy-create {
+        &__title {
+            font-size: 28px;
+            line-height: 30px;
+        }
+    }
     .cv-item {
         flex-direction: column;
         &__categories {
@@ -764,6 +770,34 @@
 }
 
 @media screen and (max-width: 400px) {
+    .form {
+        &__description-item {
+            margin: 3px 6px;
+        }
+        &__description-col {
+            margin: 3px -6px;
+        }
+    }
+    .vacancy-create {
+        &__btn {
+            width: 100%;
+            padding: 15px 30px;
+        }
+    }
+    .vacancy-salary {
+        &__types {
+            flex-direction: column;
+        }
+        &__types-item {
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &__type {
+            border: 1px solid $grey;
+        }
+    }
     .company-cv {
         &__head {
             font-size: 20px;

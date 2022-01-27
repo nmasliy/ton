@@ -214,6 +214,41 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    function initMasks() {
+        const $phones = document.querySelectorAll('.phone-mask');
+        const $telegrams = document.querySelectorAll('.telegram-mask');
+        const $dollars = document.querySelectorAll('.dollar-mask');
+
+        if ($phones.length > 0) {
+            $phones.forEach(item => {
+                IMask(item, {
+                    mask: '+380000000000' 
+                });
+            })
+        }
+        
+        if ($telegrams.length > 0) {
+            $telegrams.forEach(item => {
+                IMask(item, {
+                    mask: '@' 
+                });
+            })
+            
+        }
+        if ($dollars.length > 0) {
+            $dollars.forEach(item => {
+                IMask(item, {
+                    mask: '$num',
+                    blocks: {
+                        num: {
+                            mask: Number,
+                        }
+                    }
+                });
+            })
+        }
+    }
+
     isWebp();
     initMenu();
     initModals();
@@ -221,6 +256,7 @@ window.addEventListener('DOMContentLoaded', function() {
     initSelects();
     initFilter();
     initFilterMore();
+    initMasks();
     initCopyInputText();
     initTabs();
     disableTransitionBeforeLoad();

@@ -1,0 +1,125 @@
+.vacancy-create {
+    padding-top: 60px;
+    padding-bottom: 85px;
+
+    &__inner {
+        max-width: 545px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+        text-align: center;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    &__form-item {
+        margin-bottom: 20px;
+    }
+
+    &__caption {
+        display: block;
+        margin-bottom: 7px;
+    }
+
+    &__extra {
+        margin-bottom: 44px;
+    }
+
+    &__extra-title {
+        margin-bottom: 20px;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    &__category {
+        margin-bottom: 30px;
+    }
+}
+
+.vacancy-salary {
+    margin-bottom: 44px;
+
+    &__title {
+        text-align: center;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 13px;
+    }
+
+    &__types {
+        display: flex;
+        background: $grey-bg;
+        border-radius: 16px;
+        padding: 4px 5px;
+        margin-bottom: 12px;
+    }
+
+    &__types-item {
+        width: 100%;
+
+        label {
+            cursor: pointer;
+        }
+
+        input {
+            display: none;
+            &:checked ~ .vacancy-salary__type {
+                background-color: #3B86C6;
+                color: $white;
+            }
+        }
+    }
+
+    &__type {
+        display: block;
+        text-align: center;
+        padding: 18px 20px;
+        color: $grey;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 20px;
+        transition: .3s;
+        border-radius: 12px;
+    }
+
+    &__field-wrapper {
+        margin: 7px;
+        max-width: 180px;
+    }
+
+    &__caption {
+        margin-bottom: 4px;
+    }
+
+    &__fields {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: -7px;
+    }
+
+    &__field {
+        position: relative;
+
+        span {
+            color: $grey;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 18px;
+        }
+        input {
+            width: 100%;
+            font-size: 18px;
+            line-height: 22px;
+            font-family: 'Inter', sans-serif;
+            padding-right: 65px;
+        }
+    }
+}
+
