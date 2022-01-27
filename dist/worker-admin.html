@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
     <meta charset="UTF-8">
@@ -9,19 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Mulish:wght@600;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Тест</title>
+    <title>Worker admin</title>
 </head>
-<body>
-    <style>
-        .test {
-            font-size: 20px;
-        }
-        .main {
-            padding-top: 150px;
-        }
-    </style>
-    <div class="page-wrapper">
-        <header class="header">
+    <body>
+        <div class="page-wrapper">
+            <header class="header">
     <div class="container">
         <div class="header__inner">
             <a href="./" class="header__logo logo">
@@ -67,29 +59,158 @@
     </div>
     <div class="header__overlay"></div>
 </header>
-        <div class="page">
-            <div class="container test">
-                <div style="color: blueviolet;"><a href="index.html">Главная</a></div>
-                <div  style="color: blueviolet;"><a href="workers.html">Workers</a></div>
-                <div style="color: blueviolet;"><a href="worker.html">Worker</a></div>
-                <div style="color: blueviolet;"><a href="worker-admin.html">Worker admin</a></div>
-                <div><a href="worker-info.html">Worker info</a></div>
-                <div  style="color: blueviolet;"><a href="companies.html">Companies</a></div>
-                <div style="color:blueviolet";><a href="company.html">Company</a></div>
-                <div style="color:blueviolet";><a href="company-admin.html">Company admin</a></div>
-                <div><a href="company-info.html">Company info</a></div>
-                <div style="color:blueviolet";><a href="company-empty.html">Company empty</a></div>
-                <div style="color:blueviolet";><a href="vacancy.html">Vacancy</a></div>
-                <div style="color:blueviolet";><a href="no-vacancy.html">No vacancy</a></div>
-                <div style="color:blueviolet";><a href="no-vacancy-admin.html">No vacancy admin</a></div>
-                <hr>
-                <div style="color:blueviolet";><a href="#" data-micromodal-trigger="modal-signup">Modal Sign up</a></div>
-                <div style="color:blueviolet";><a href="#" data-micromodal-trigger="modal-payment">Modal Payment</a></div>
-                <div style="color:blueviolet";><a href="#" data-micromodal-trigger="modal-create-vacancy">Modal Create vacancy</a></div>
-                <div style="color:blueviolet";><a href="loading.html">Loading</a></div>
+            <div class="page">
+                <main class="main">
+                    <section class="page-head page-head--admin">
+                        <div class="container">
+                            <div class="page-head__inner">
+                                <div class="page-head__btn-wrapper">
+                                    <a href="#" class="page-head__btn btn btn--xl btn--white">Edit profile</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="worker-head">
+                        <div class="container">
+                            <div class="worker-head__inner">
+                                <div class="worker-head__left">
+                                    <div class="worker-head__img-wrapper">
+                                        <div class="worker-head__img worker-head__img--online">
+                                            <img src="img/worker-1.png" width="243" height="243" alt="Jane Smith-Robberton">
+                                        </div>
+                                        <div class="worker-head__img-caption">Was online July, 21</div>
+                                    </div>
+                                    <div class="worker-head__desc">
+                                        <div class="worker-head__speciality">Full-stack developer</div>
+                                        <div class="worker-head__name">Jane Smith-Robberton</div>
+                                        <div class="worker-head__experience experience-box experience-box--lg">
+                                            <div class="worker-head__experience-img experience-box__img">
+                                                <img src="img/check.svg" alt="">
+                                            </div>
+                                            <div class="worker-head__experience-content experience-box__content">
+                                                <div class="worker-head__experience-title experience-box__title">Crypto projects</div>
+                                                <div class="worker-head__experience-title experience-box__text">Have experience in crypto projects</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="worker-head__right">
+                                    <a href="#" class="worker-head__employment employment-btn">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 11.25H6.75V9L13.5 2.25L15.75 4.5L9 11.25Z" stroke="#3B86C6" stroke-width="1.28571" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M11.8125 3.9375L14.0625 6.1875" stroke="#3B86C6" stroke-width="1.28571" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15.1875 8.4375V14.625C15.1875 14.7742 15.1282 14.9173 15.0227 15.0227C14.9173 15.1282 14.7742 15.1875 14.625 15.1875H3.375C3.22582 15.1875 3.08274 15.1282 2.97725 15.0227C2.87176 14.9173 2.8125 14.7742 2.8125 14.625V3.375C2.8125 3.22582 2.87176 3.08274 2.97725 2.97725C3.08274 2.87176 3.22582 2.8125 3.375 2.8125H9.5625" stroke="#3B86C6" stroke-width="1.28571" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>Underemployment</span>
+                                    </a>
+                                    <div class="worker-head__extra worker-extra">
+                                        <div class="worker-head__extra-item worker-extra__item">
+                                            <img src="img/user.svg" alt="">
+                                            <span>18 y.o.</span>
+                                        </div>
+                                        <div class="worker-head__extra-item worker-extra__item">
+                                            <img src="img/clock.svg" alt="">
+                                            <span>UTC+14:00</span>
+                                        </div>
+                                        <div class="worker-head__extra-item worker-extra__item">
+                                            <img src="img/calendar.svg" alt="">
+                                            <span>2 year experience</span>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="worker-head__btn btn btn--default">Send a message</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="worker-content">
+                        <div class="container">
+                            <div class="worker-content__inner">
+                                <div class="worker-content__box worker-content__box--left">
+                                    <div class="worker-content__title">Portfolio</div>
+                                    <p>Gloria Gonzalez <br>Houston</p>
+                                    <div class="worker-content__subtitle">RESEARCH INTERESTS</div>
+                                    <p>Hispanic Literature, Latin American Literature, Peninsular Literature</p>
+                                    <div class="worker-content__subtitle">EDUCATION</div>
+                                    <p>Ph.D. in Spanish (US Hispanic Literature), 2018 – University of Houston. <br> Dissertation: Quixote Reborn: The Wanderer in US Hispanic Literature. Sancho Rodriguez, Chair</p>
+                                    <p>M.A. in Spanish, June 2015 – University of Houston</p>
+                                    <p>B.A. in Spanish, June 2013 – University of Houston</p>
+                                </div>
+                                <div class="worker-content__box worker-content__box--right">
+                                    <div class="worker-content__title">About</div>
+                                    <p>Lose eyes get fat shew. Winter can indeed letter oppose way change tended now. So is improve my charmed picture exposed adapted demands. Received had end produced prepared diverted strictly off man branched.</p>
+                                    <p>Known ye money so large decay voice there to. Preserved be mr cordially incommode as an. He doors quick child an point at. Had share vexed front least style off why him. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="worker-vacancies">
+                        <div class="container">
+                            <div class="worker-vacancies__inner">
+                                <div class="worker-vacancies__title worker-content__title">Your vacancies</div>
+                                <ul class="worker-vacancies__list">
+                                    <li class="vacancy">
+                                        <div class="vacancy__inner">
+                                            <div class="vacancy__head">
+                                                <div class="vacancy__info">
+                                                    <div class="vacancy__info-item">Published 6 hours ago</div>
+                                                    <time class="vacancy__info-item">July, 23 16:00</time>
+                                                </div>
+                                                <div class="vacancy__tag tag-box tag-box--red tag-box--flex">
+                                                    <img src="img/fire.svg" alt="">
+                                                    <span>Featured</span>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="vacancy__title">Expert consultant on work with clients (EdTech + IT)</a>
+                                            <div class="vacancy__text">
+                                                At the same time, we are expanding the sale! It is worth being able to go beyond the interphone line, learn how to work in person and online, take part in the calls, go to the recruitment at the conference and work well
+                                            </div>
+                                            <div class="vacancy__foot">
+                                                <div class="vacancy__salary">$1200-$1400</div>
+                                                <div class="vacancy__geo">
+                                                    <img src="img/location.svg" alt="">
+                                                    <span>Estonia, Tallinn</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="vacancy__btn">
+                                            <img src="img/delete.svg" alt="Delete vacancy">
+                                        </button>
+                                    </li>
+                                    <li class="vacancy">
+                                        <div class="vacancy__inner">
+                                            <div class="vacancy__head">
+                                                <div class="vacancy__info">
+                                                    <div class="vacancy__info-item">Published 6 hours ago</div>
+                                                    <time class="vacancy__info-item">July, 23 16:00</time>
+                                                </div>
+                                                <div class="vacancy__tag tag-box tag-box--red tag-box--flex">
+                                                    <img src="img/fire.svg" alt="">
+                                                    <span>Featured</span>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="vacancy__title">Expert consultant on work with clients (EdTech + IT)</a>
+                                            <div class="vacancy__text">
+                                                At the same time, we are expanding the sale! It is worth being able to go beyond the interphone line, learn how to work in person and online, take part in the calls, go to the recruitment at the conference and work well
+                                            </div>
+                                            <div class="vacancy__foot">
+                                                <div class="vacancy__salary">$1200-$1400</div>
+                                                <div class="vacancy__geo">
+                                                    <img src="img/location.svg" alt="">
+                                                    <span>Estonia, Tallinn</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="vacancy__btn">
+                                            <img src="img/delete.svg" alt="Delete vacancy">
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </main>
             </div>
-        </div>
-        <footer class="footer">
+            <footer class="footer">
     <div class="footer__main">
         <div class="container">
             <div class="footer__inner">
@@ -137,8 +258,8 @@
         </div>
     </div>
 </footer>
-    </div>
-    <div class="modal modal-signup micromodal-slide" id="modal-signup">
+        </div>
+        <div class="modal modal-signup micromodal-slide" id="modal-signup">
     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
         <div class="modal__container">
             <div class="modal__inner">
@@ -187,78 +308,9 @@
         </div>
     </div>
 </div>
-<div class="modal modal-vacancy micromodal-slide" id="modal-create-vacancy">
-    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-        <div class="modal__container">
-            <div class="modal__inner">
-                <div class="modal__content">
-                    <button class="modal__close" data-micromodal-close aria-label="Close this dialog window">
-                        <img src="img/close.svg" alt="Close" data-micromodal-close>
-                    </button>
-                    <div class="modal-vacancy__img">
-                        <img src="img/hourglass.svg" width="40" height="40" alt="">
-                    </div>
-                    <div class="modal-vacancy__title">
-                        Как только вакансия добавлена, она отображается на странице “Ваши вакансии”
-                    </div>
-                    <div class="modal-vacancy__text">
-                        Перед публикацией, каждое объявление проходит модерацию.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal modal-payment micromodal-slide" id="modal-payment">
-    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-        <div class="modal__container">
-            <div class="modal__inner">
-                <div class="modal__content">
-                    <button class="modal__close" data-micromodal-close aria-label="Close this dialog window">
-                        <img src="img/close.svg" width="18" height="18" alt="Close" data-micromodal-close>
-                    </button>
-                    <div class="modal-payment__title modal__title">Payment</div>
-                    <div class="modal-payment__head">
-                        <img src="img/toncoin.svg" width="42" height="42" alt="">
-                        <div>Для того чтобы разместить вакансию внесите на счет <b>0,5 Toncoin</b></div>
-                    </div>
-                    <form action="#" class="modal-payment__form form">
-                        <div class="modal-payment__item">
-                            <div class="modal-payment__caption">
-                                <img src="img/payment-1.svg" width="40" height="40" alt="">
-                                <span>Отправить 0,5 Toncoin необходимо на кошелек:</span>
-                            </div>
-                            <div class="modal-payment__field">
-                                <button type="button">
-                                    <img src="img/copy.svg" width="24" height="24" alt="Copy text">
-                                </button>
-                                <input class="modal-payment__input form__input">
-                            </div>
-                        </div>
-                        <div class="modal-payment__item">
-                            <div class="modal-payment__caption">
-                                <img src="img/payment-2.svg" width="40" height="40" alt="">
-                                <span>К платежу добавьте комментарий (сообщение)</span>
-                            </div>
-                            <div class="modal-payment__field">
-                                <button type="button">
-                                    <img src="img/copy.svg" width="24" height="24" alt="Copy text">
-                                </button>
-                                <input class="modal-payment__input form__input">
-                            </div>
-                        </div>
-                        <div class="modal-payment__btn-wrapper">
-                            <button class="modal-payment__btn btn btn--lg btn--default">Check payment</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-    <script src="js/nouislider.min.js"></script>
+        <script src="js/nouislider.min.js"></script>
 <script src="js/micromodal.min.js"></script>
 <script src="js/nice-select2.js"></script>
 <script src="js/app.js"></script>
-</body>
+    </body>
 </html>

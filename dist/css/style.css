@@ -2207,7 +2207,6 @@ h1.title {
   box-shadow: 0px 4px 30px rgba(164, 164, 164, 0.1);
   border-radius: 12px;
   margin: 16px;
-  min-height: 460px;
 }
 .worker-content__box p {
   font-size: 18px;
@@ -2239,6 +2238,13 @@ h1.title {
   text-transform: uppercase;
   color: #43475C;
   margin-bottom: 8px;
+}
+
+.worker-vacancies {
+  padding-bottom: 100px;
+}
+.worker-vacancies__title {
+  padding-left: 40px;
 }
 
 .company-head {
@@ -3028,6 +3034,10 @@ h1.title {
   }
 }
 @media screen and (max-width: 768px) {
+  .worker-vacancies {
+    padding-bottom: 50px;
+  }
+
   .page {
     padding-top: 50px;
   }
@@ -3192,6 +3202,10 @@ h1.title {
   }
 }
 @media screen and (max-width: 600px) {
+  .worker-vacancies__title {
+    padding-left: 20px;
+  }
+
   .form__checkbox {
     font-size: 14px;
     line-height: 16px;

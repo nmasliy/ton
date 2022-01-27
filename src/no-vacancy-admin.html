@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+    @@include('html/head.html', {
+        "title": "No vacancy admin"
+    })
+    <body>
+        <div class="page-wrapper">
+            @@include('html/header.html', {})
+            <div class="page">
+                <main class="main">
+                    <section class="page-head page-head--admin">
+                        <div class="container">
+                            <div class="page-head__inner">
+                                <div class="page-head__btn-wrapper">
+                                    <a href="#" class="page-head__btn btn btn--xl btn--white">Edit profile</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="company-head">
+                        <div class="container">
+                            <div class="company-head__inner">
+                                <div class="company-head__left">
+                                    <div class="company-head__img-wrapper company-img-box">
+                                        <div class="company-head__img company-img-box__item">
+                                            <img src="@img/company-1.svg" width="145" height="62" alt="amazon logo">
+                                        </div>
+                                        <a href="#" class="company-head__right-link visit-link">
+                                            <img src="@img/site.svg" alt="">
+                                            <span>Visit website</span>
+                                        </a>
+                                    </div>
+                                    <div class="company-head__info">
+                                        <div class="company-head__info-head">
+                                            <div class="company-head__title">Amazon Inc</div>
+                                            <div class="company-head__tag tag-box">10 000 open vacany</div>
+                                        </div>
+                                        <div class="company-head__text">
+                                            Marianne or husbands if at stronger ye. Considered is as middletons uncommonly. Promotion perfectly ye consisted so. His chatty dining for effect ladies active. Equally journey wishing not several behaved chapter she two sir. Deficient procuring favourite extensive you two
+                                        </div>
+                                        <div class="company-head__extra worker-extra">
+                                            <div class="company-head__extra-item worker-extra__item">
+                                                <img src="@img/users.svg" alt="">
+                                                <span>more than 500 employees</span>
+                                            </div>
+                                            <div class="company-head__extra-item worker-extra__item">
+                                                <img src="@img/chart.svg" alt="">
+                                                <span>15 years on the market</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="company-head__right">
+                                    <div class="company-head__benefits">
+                                        <ul class="company-head__benefits-list">
+                                            <li>
+                                                <img src="@img/celebration.svg" alt="">
+                                                <span>Corporate events</span>
+                                            </li>
+                                            <li>
+                                                <img src="@img/heart.svg" alt="">
+                                                <span>Health insurance</span>
+                                            </li>
+                                            <li>
+                                                <img src="@img/tag.svg" alt="">
+                                                <span>Employee discounts</span>
+                                            </li>
+                                        </ul>
+                                        <ul class="company-head__benefits-list">
+                                            <li>
+                                                <img src="@img/gift.svg" alt="">
+                                                <span>Bonuses and premiums</span>
+                                            </li>
+                                            <li>
+                                                <img src="@img/clock.svg" alt="">
+                                                <span>Flexible schedule</span>
+                                            </li>
+                                            <li>
+                                                <img src="@img/dollar.svg" alt="">
+                                                <span>Regular salary review</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="no-vacancy">
+                        <div class="container"  >
+                            <div class="no-vacancy__inner">
+                                <div class="no-vacancy__img">
+                                    <img width="343" height="270" src="@img/no-vacancy.svg" alt="">
+                                </div>
+                                <div class="no-vacancy__content">
+                                    <div class="no-vacancy__subtitle">Vacancies</div>
+                                    <div class="no-vacancy__title">No vacancies yet</div>
+                                    <div class="no-vacancy__text">This company are not hiring now</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+            @@include('html/footer.html', {})
+        </div>
+        @@include('html/modal-signup.html', {})
+        @@include('html/scripts.html', {})
+    </body>
+</html>

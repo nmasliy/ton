@@ -292,6 +292,9 @@
 }
 
 @media screen and (max-width: $mobileBreakpoint) { // 768
+    .worker-vacancies {
+        padding-bottom: 50px;
+    }
     .page {
         padding-top: 50px;
     }
@@ -460,6 +463,11 @@
 }
 
 @media screen and (max-width: 600px) {
+    .worker-vacancies {
+        &__title {
+            padding-left: 20px;
+        }
+    }
     .form {
         &__checkbox {
             font-size: 14px;
