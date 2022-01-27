@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+    @@include('html/head.html', {
+        "title": "Create vacancy"
+    })
+    <body>
+        <div class="page-wrapper">
+            @@include('html/header.html', {})
+            <div class="page">
+                <main class="main">
+                    <section class="vacancy-create">
+                        <div class="container">
+                            <div class="vacancy-create__inner">
+                                <h2 class="vacancy-create__title">Create vacancy</h2>
+                                <form action="#" class="vacancy-create__form">
+                                    <div class="vacancy-create__form-item">
+                                        Vacancy
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+            @@include('html/footer.html', {})
+        </div>
+        @@include('html/modal-signup.html', {})
+        @@include('html/scripts.html', {})
+    </body>
+</html>
