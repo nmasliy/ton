@@ -38,6 +38,12 @@
     &__category {
         margin-bottom: 30px;
     }
+
+    &__select {
+        .custom-select {
+            font-weight: 600;
+        }
+    }
 }
 
 .vacancy-salary {

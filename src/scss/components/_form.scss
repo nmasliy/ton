@@ -1,4 +1,9 @@
 .form {
+    &--wide {
+        input {
+            width: 100%;
+        }
+    }
     &__checkbox {
         display: flex;
         align-items: center;
@@ -26,6 +31,69 @@
                 }
             }
         }
+    }
+
+    &__benefits {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -6px -8px;
+    }
+
+    &__benefits-item {
+        margin: 6px 8px;
+        cursor: pointer;
+        input {
+            display: none;
+            &:checked ~ .form__benefits-item-inner {
+                background-color: rgba($primary, .1);
+                color: $primary;
+                border-color: transparent;
+            } 
+        }
+    }
+
+    &__benefits-item-inner {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        line-height: 19px;
+        font-family: 'Inter', sans-serif;
+        padding: 16px 24px;
+        border: 1px solid #D1D9EA;
+        border-radius: 8px;
+        transition: .3s;
+
+        img, svg {
+            flex-shrink: 0;
+        }
+        span {
+            margin-left: 6px;
+        }
+    }
+    
+    &__file-item {
+        input {
+            display: none;
+        }
+    }
+
+    &__title {
+        font-weight: 900;
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 14px;
+    }
+    
+    &__item {
+        margin-bottom: 17px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__item-caption {
+        display: block;
+        margin-bottom: 7px;
     }
 
     &__checkbox-item {
@@ -87,9 +155,11 @@
         font-size: 16px;
         line-height: 19px;
         color: $text;
+        font-family: 'Inter', sans-serif;
     
         &::placeholder {
             color: $grey;
+            font-weight: 400;
         }
         // *Дополнительные классы для валидации
         &.invalid {
@@ -111,7 +181,7 @@
     }
     
     textarea {
-        min-height: 150px;
+        min-height: 195px;
     }
 
     &__category-field {

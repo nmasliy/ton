@@ -230,7 +230,7 @@ window.addEventListener('DOMContentLoaded', function() {
         if ($telegrams.length > 0) {
             $telegrams.forEach(item => {
                 IMask(item, {
-                    mask: '@' 
+                    mask: '@********************************' // 32 - telegram login max length
                 });
             })
             

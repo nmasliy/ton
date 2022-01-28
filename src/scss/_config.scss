@@ -57,6 +57,10 @@ p {
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
+
+    &--sm {
+        max-width: 850px;
+    }
 }
 
 .logo {
