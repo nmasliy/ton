@@ -633,6 +633,9 @@ h1.title {
 .btn--wide {
   width: 100%;
 }
+.btn--sm {
+  padding: 14px 30px;
+}
 .btn--xl {
   min-width: 243px;
   padding: 18px 45px;
@@ -993,11 +996,27 @@ h1.title {
   line-height: 28px;
   margin-bottom: 14px;
 }
+.form__title span {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: #8C8F9F;
+  font-weight: 400;
+}
 .form__item {
   margin-bottom: 17px;
 }
 .form__item:last-child {
   margin-bottom: 0;
+}
+.form__item--offset-md {
+  margin-bottom: 21px;
+}
+.form__item--offset-lg {
+  margin-bottom: 28px;
+}
+.form__item--offset-xl {
+  margin-bottom: 40px;
 }
 .form__item-caption {
   display: block;
@@ -1107,7 +1126,7 @@ h1.title {
   margin: 8px;
   border: 1px solid #D1D9EA;
   border-radius: 8px;
-  padding: 14px 60px 14px 22px;
+  padding: 14px 55px 14px 22px;
   font-size: 16px;
   line-height: 19px;
   font-family: "Inter", sans-serif;
@@ -1125,10 +1144,6 @@ h1.title {
 .form__description textarea {
   padding-left: 27px;
   padding-right: 18px;
-  font-size: 16px;
-  line-height: 19px;
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
   width: 100%;
   border: none;
 }
@@ -1487,6 +1502,77 @@ h1.title {
 }
 .header__navigation {
   overflow: hidden;
+}
+.header__buttons {
+  display: flex;
+  align-items: center;
+}
+.header__btn-logout {
+  margin-left: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 0;
+}
+.header__btn-logout svg, .header__btn-logout img {
+  flex-shrink: 0;
+}
+.header__btn-logout span {
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 20px;
+  margin-right: 12px;
+  color: #8C8F9F;
+}
+@media screen and (min-width: 768px) {
+  .header__btn-logout span, .header__btn-logout img, .header__btn-logout svg, .header__btn-logout path {
+    transition: 0.3s;
+  }
+  .header__btn-logout:hover span {
+    transform: translateX(2px);
+    color: #3B86C6;
+  }
+  .header__btn-logout:hover img, .header__btn-logout:hover svg {
+    transform: translateX(-2px);
+  }
+  .header__btn-logout:hover path {
+    fill: #3B86C6;
+  }
+}
+.header__btn-account {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  text-align: center;
+  cursor: pointer;
+  white-space: break-spaces;
+  border: 1px solid transparent;
+  border-radius: 45px;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: normal;
+  color: #fff;
+  background-color: #3B86C6;
+}
+.header__btn-account span {
+  margin-left: 10px;
+}
+@media screen and (min-width: 768px) {
+  .header__btn-account {
+    transition: 0.3s;
+  }
+  .header__btn-account path {
+    transition: 0.3s;
+  }
+  .header__btn-account:hover {
+    color: #3B86C6;
+    background-color: #fff;
+    border-color: #3B86C6;
+  }
+  .header__btn-account:hover path {
+    fill: #3B86C6;
+  }
 }
 .header__menu {
   display: flex;
@@ -2261,6 +2347,10 @@ h1.title {
   padding: 20px;
   margin-bottom: 10px;
 }
+.company-img-box__item--rounded {
+  border-radius: 50%;
+  padding: 0;
+}
 .company-img-box__title {
   margin-bottom: 4px;
   font-weight: 900;
@@ -2963,12 +3053,13 @@ h1.title {
   line-height: 22px;
 }
 
-.company-info {
+.section-info {
   padding-bottom: 53px;
 }
-.company-info__img-wrapper {
+.section-info__img-wrapper {
   margin-bottom: 22px;
 }
+
 .company-info__description-box {
   margin-top: 28px;
 }
@@ -3309,6 +3400,14 @@ h1.title {
   }
 }
 @media screen and (max-width: 1024px) {
+  .header__btn-logout {
+    margin-left: 15px;
+  }
+
+  .header__btn-account {
+    padding: 16px 24px;
+  }
+
   .section-page__inner {
     flex-direction: column;
   }
@@ -3692,12 +3791,15 @@ h1.title {
     width: 100%;
   }
 
+  .header__btn-logout {
+    margin-left: 0;
+  }
   .header__menu {
     padding: 60px 20px;
   }
   .header__buttons {
-    display: flex;
     flex-direction: column;
+    align-items: stretch;
   }
   .header__btn {
     margin-left: 0;
@@ -3959,10 +4061,10 @@ h1.title {
   }
 }
 @media screen and (max-width: 400px) {
-  .company-info__img-wrapper {
+  .section-info__btn, .section-info__logo-btn {
     width: 100%;
   }
-  .company-info__logo-btn, .company-info__btn {
+  .section-info__img-wrapper {
     width: 100%;
   }
 

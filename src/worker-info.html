@@ -5,10 +5,221 @@
     })
     <body>
         <div class="page-wrapper">
-            @@include('html/header.html', {})
+            @@include('html/header-logined.html', {})
             <div class="page">
                 <main class="main">
-                    
+                    <section class="page-head page-head--admin">
+                        <div class="container">
+                            <div class="page-head__inner">
+                                <div class="page-head__btn-wrapper">
+                                    <a href="#" class="page-head__btn btn btn--xl btn--white">Publish vacancy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section-page section-info company-info">
+                        <div class="container container--sm">
+                            <form action="#" class="form form--wide">
+                                <div class="section-page__inner">
+                                    <div class="section-page__small section-page__small--size-sm section-page__small--margin-lg">
+                                        <div class="section-info__img-wrapper company-info__img-wrapper company-img-box">
+                                            <div class="company-img-box__item company-img-box__item--rounded">
+                                                <img src="@img/worker-1.png" width="243" height="243" alt="">
+                                            </div>
+                                            <div class="form__file-item">
+                                                <input type="file" name="logo" id="logo">
+                                                <label for="logo">
+                                                    <div class="section-info__logo-btn btn btn--default btn--xl">Change photo</div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form__item">
+                                            <span class="form__item-caption">Employment type</span>
+                                            <div class="vacancy-create__select">
+                                                <select class="custom-select">
+                                                    <option data-display="Select" selected value="1">Full time</option>
+                                                    <option value="2">Part time</option>
+                                                    <option value="3">Full time</option>
+                                                    <option value="4">Part time</option>
+                                                    <option value="5">Full time</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="section-page__big section-page__big--padding-md">
+                                        <div class="form__item form__item--offset-md">
+                                            <label>
+                                                <span class="form__item-caption">Name</span>
+                                                <input placeholder="Name" type="text" class="form__input">
+                                            </label>
+                                        </div>
+                                        <div class="form__item form__item--offset-md">
+                                            <label>
+                                                <span class="form__item-caption">Category</span>
+                                                <input placeholder="Category" type="text" class="form__input">
+                                            </label>
+                                        </div>
+                                        <div class="form__item form__item--offset-md">
+                                            <label>
+                                                <span class="form__item-caption">Age</span>
+                                                <input placeholder="Age" type="number" class="form__input">
+                                            </label>
+                                        </div>
+                                        <div class="form__item form__item--offset-md">
+                                            <label>
+                                                <span class="form__item-caption">Years of experience</span>
+                                                <input placeholder="Years" type="number" class="form__input">
+                                            </label>
+                                        </div>
+                                        <div class="form__title">Timeline</div>
+                                        <div class="form__item form__item--offset-xl">
+                                            <span class="form__item-caption">Select city</span>
+                                            <div class="vacancy-create__select">
+                                                <select class="custom-select">
+                                                    <option data-display="Select" selected value="1">Kyiv (GTS+2)</option>
+                                                    <option value="2">Kyiv (GTS+2)</option>
+                                                    <option value="3">Kyiv (GTS+2)</option>
+                                                    <option value="4">Kyiv (GTS+2)</option>
+                                                    <option value="5">Kyiv (GTS+2)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form__item form__item--offset-lg">
+                                            <span class="form__item-caption">Portfolio</span>
+                                            <div class="form__description">
+                                                <div class="form__description-head">
+                                                    <div class="form__description-col">
+                                                        <button class="form__description-item active" type="button">
+                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M4.49992 8.4376H10.6874C11.4333 8.4376 12.1487 8.73392 12.6762 9.26136C13.2036 9.78881 13.4999 10.5042 13.4999 11.2501C13.4999 11.996 13.2036 12.7114 12.6762 13.2388C12.1487 13.7663 11.4333 14.0626 10.6874 14.0626L4.49951 14.0623V3.37476L9.84367 3.3751C10.515 3.3751 11.1588 3.64178 11.6335 4.11648C12.1082 4.59119 12.3749 5.23502 12.3749 5.90635C12.3749 6.57768 12.1082 7.22151 11.6335 7.69621C11.1588 8.17091 10.515 8.4376 9.84367 8.4376" stroke="#8C8F9F" stroke-width="1.6875" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </button>
+                                                        <button class="form__description-item" type="button">
+                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M10.687 3.93726L7.31201 14.0623" stroke="#8C8F9F" stroke-width="1.6875" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M4.49951 14.0623H10.1245" stroke="#8C8F9F" stroke-width="1.6875" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M7.87451 3.93726H13.4995" stroke="#8C8F9F" stroke-width="1.6875" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </button>
+                                                        <button class="form__description-item" type="button">
+                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M2.8125 15.1875H15.1875" stroke="#8C8F9F" stroke-width="1.6875" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M4.5 3.9375V8.15625C4.5 9.34972 4.97411 10.4943 5.81802 11.3382C6.66193 12.1821 7.80653 12.6562 9 12.6562C10.1935 12.6562 11.3381 12.1821 12.182 11.3382C13.0259 10.4943 13.5 9.34972 13.5 8.15625V3.9375" stroke="#8C8F9F" stroke-width="1.6875" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <div class="form__description-col">
+                                                        <button class="form__description-item" type="button">
+                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M2.8125 4.5H15.1875" stroke="#8C8F9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M2.8125 9H15.1875" stroke="#8C8F9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M2.8125 13.5H10.125" stroke="#8C8F9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M12.9375 13.5H16.3125" stroke="#8C8F9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M14.625 11.8125V15.1875" stroke="#8C8F9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <div class="form__description-col">
+                                                        <button class="form__description-item" type="button">
+                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M8.99951 3.93713V14.0621" stroke="#8C8F9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M3.37451 6.18713V3.93713H14.6245V6.18713" stroke="#8C8F9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M6.74951 14.0621H11.2495" stroke="#8C8F9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                            <span>Add heading</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <textarea placeholder="Description"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form__item form__item--offset-lg">
+                                            <span class="form__item-caption">About</span>
+                                            <div class="form__description">
+                                                <div class="form__description-head">
+                                                    <div class="form__description-col">
+                                                        <button class="form__description-item active" type="button">
+                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M4.49992 8.4376H10.6874C11.4333 8.4376 12.1487 8.73392 12.6762 9.26136C13.2036 9.78881 13.4999 10.5042 13.4999 11.2501C13.4999 11.996 13.2036 12.7114 12.6762 13.2388C12.1487 13.7663 11.4333 14.0626 10.6874 14.0626L4.49951 14.0623V3.37476L9.84367 3.3751C10.515 3.3751 11.1588 3.64178 11.6335 4.11648C12.1082 4.59119 12.3749 5.23502 12.3749 5.90635C12.3749 6.57768 12.1082 7.22151 11.6335 7.69621C11.1588 8.17091 10.515 8.4376 9.84367 8.4376" stroke="#8C8F9F" stroke-width="1.6875" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </button>
+                                                        <button class="form__description-item" type="button">
+                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M10.687 3.93726L7.31201 14.0623" stroke="#8C8F9F" stroke-width="1.6875" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M4.49951 14.0623H10.1245" stroke="#8C8F9F" stroke-width="1.6875" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M7.87451 3.93726H13.4995" stroke="#8C8F9F" stroke-width="1.6875" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </button>
+                                                        <button class="form__description-item" type="button">
+                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M2.8125 15.1875H15.1875" stroke="#8C8F9F" stroke-width="1.6875" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M4.5 3.9375V8.15625C4.5 9.34972 4.97411 10.4943 5.81802 11.3382C6.66193 12.1821 7.80653 12.6562 9 12.6562C10.1935 12.6562 11.3381 12.1821 12.182 11.3382C13.0259 10.4943 13.5 9.34972 13.5 8.15625V3.9375" stroke="#8C8F9F" stroke-width="1.6875" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <div class="form__description-col">
+                                                        <button class="form__description-item" type="button">
+                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M2.8125 4.5H15.1875" stroke="#8C8F9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M2.8125 9H15.1875" stroke="#8C8F9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M2.8125 13.5H10.125" stroke="#8C8F9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M12.9375 13.5H16.3125" stroke="#8C8F9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M14.625 11.8125V15.1875" stroke="#8C8F9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <div class="form__description-col">
+                                                        <button class="form__description-item" type="button">
+                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M8.99951 3.93713V14.0621" stroke="#8C8F9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M3.37451 6.18713V3.93713H14.6245V6.18713" stroke="#8C8F9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M6.74951 14.0621H11.2495" stroke="#8C8F9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                            <span>Add heading</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <textarea placeholder="Description"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form__item form__item--offset-lg">
+                                            <div class="form__title">Skills <span>(optional)</span></div>
+                                            <span class="form__item-caption">Skills</span>
+                                            <div class="form__category">
+                                                <div class="form__category-field">
+                                                    <input type="text" class="form__input" placeholder="Start to enter">
+                                                    <button class="form__category-btn" type="button">
+                                                        <img src="@img/plus.svg" alt="">
+                                                    </button>
+                                                </div>
+                                                <ul class="form__category-items">
+                                                    <li class="form__category-item">
+                                                        <span>Frontend development</span>
+                                                        <button class="form__category-item-btn" type="button">
+                                                            <img src="@img/close-danger.svg" alt="">
+                                                        </button>
+                                                    </li>
+                                                    <li class="form__category-item">
+                                                        <span>IT</span>
+                                                        <button class="form__category-item-btn" type="button">
+                                                            <img src="@img/close-danger.svg" alt="">
+                                                        </button>
+                                                    </li>
+                                                    <li class="form__category-item">
+                                                        <span>Backend</span>
+                                                        <button class="form__category-item-btn" type="button">
+                                                            <img src="@img/close-danger.svg" alt="">
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <button class="section-info__btn form__btn btn btn--default btn--lg">Save changings</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
                 </main>
             </div>
             @@include('html/footer.html', {})

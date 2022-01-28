@@ -31,8 +31,12 @@ window.addEventListener('DOMContentLoaded', function() {
         let isInit = false;
     
         const checkScreenWidth = () => {
-            const MOBILE_MENU_BREAKPOINT = 1024;
-            // Активируем меню только на экранах <= 1024
+            const MOBILE_MENU_BREAKPOINT = 768;
+
+            if (window.innerWidth > MOBILE_MENU_BREAKPOINT && $header.classList.contains('active')) {
+                closeMenu();
+            }
+            // Активируем меню только на экранах <= 768
             if (window.innerWidth <= MOBILE_MENU_BREAKPOINT && !isInit) {
                 isInit = true;
                 $headerBtn.addEventListener('click', openMenu)

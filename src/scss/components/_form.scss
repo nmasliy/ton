@@ -82,12 +82,29 @@
         font-size: 22px;
         line-height: 28px;
         margin-bottom: 14px;
+        span {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            line-height: 19px;
+            color: $grey;
+            font-weight: 400;
+        }
     }
     
     &__item {
         margin-bottom: 17px;
         &:last-child {
             margin-bottom: 0;
+        }
+
+        &--offset-md {
+            margin-bottom: 21px;
+        }
+        &--offset-lg {
+            margin-bottom: 28px;
+        }
+        &--offset-xl {
+            margin-bottom: 40px;
         }
     }
 
@@ -211,7 +228,7 @@
         margin: 8px;
         border: 1px solid #D1D9EA;
         border-radius: 8px;
-        padding: 14px 60px 14px 22px;
+        padding: 14px 55px 14px 22px;
         font-size: 16px;
         line-height: 19px;
         font-family: 'Inter', sans-serif;
@@ -230,10 +247,6 @@
         textarea {
             padding-left: 27px;
             padding-right: 18px;
-            font-size: 16px;
-            line-height: 19px;
-            font-family: 'Inter', sans-serif;
-            font-weight: 400;
             width: 100%;
             border: none;
         }
