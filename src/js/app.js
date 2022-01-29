@@ -99,8 +99,8 @@ window.addEventListener('DOMContentLoaded', function() {
             const checkScreenWidth = () => {
                 const MOBILE_FILTER_BREAKPOINT = 1160;
     
-                if (window.innerWidth > MOBILE_FILTER_BREAKPOINT && $header.classList.contains('active')) {
-                    closeMenu();
+                if (window.innerWidth > MOBILE_FILTER_BREAKPOINT && $filter.classList.contains('active')) {
+                    closeFilter();
                 }
                 // Активируем фильтр только на экранах <= 1160
                 if (window.innerWidth <= MOBILE_FILTER_BREAKPOINT && !isInit) {
