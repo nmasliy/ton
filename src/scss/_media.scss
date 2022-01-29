@@ -114,6 +114,40 @@
             margin-right: 0;
         }
     }
+    .filter {
+        display: none;
+
+        &.active {
+            .filter__inner {
+                transform: translateX(0);
+            }
+        }
+        &__inner {
+            position: fixed;
+            z-index: 27;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            height: 100%;
+            overflow: auto;
+            margin-left: 40px;
+            transform: translateX(120%);
+            transition: .35s ease;
+            border-radius: 0;
+        }
+        &__close {
+            display: block;
+        }
+    }
+    .page-search {
+        &__input {
+            width: calc(80% - 82px);
+        }
+
+        &__select {
+            width: 40%;
+        }
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -331,12 +365,22 @@
             padding: 16px 20px;
         }
     }
-    .page-search .page-search__input {
-        padding-left: 64px;
-    }
-    .page-search .custom-select {
-        padding: 16px 20px;
-        padding-left: 64px;
+    .page-search {
+        &__select {
+            width: 40%;
+        }
+        &__input {
+            width: calc(60% - 62px);
+        }
+        .page-search__input {
+            padding: 16px 20px;
+            padding-left: 64px;
+        }
+        .custom-select {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 64px;
+        }
     }
     .vacancy-create {
         &__title {
@@ -711,10 +755,6 @@
             flex-direction: column;
         }
     }
-    .filter {
-        padding: 0;
-        background-color: transparent;
-    }
     .filter-category {
         font-size: 14px;
         line-height: 16px;
@@ -725,10 +765,18 @@
         &__input {
             margin-bottom: 20px;
             width: 100%;
+            background-position: left 10px center;
         }
         &__select {
             margin-left: 0;
-            width: 100%;
+            width: calc(100% - 81px);
+            .custom-select {
+                background-position: left 10px center;
+                padding-left: 50px;
+            }
+        }
+        .page-search__input {
+            padding-left: 50px;
         }
     }
     .steps {

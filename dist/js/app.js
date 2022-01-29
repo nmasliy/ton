@@ -84,6 +84,61 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    function initFilterMenu() {
+        const $html = document.querySelector('html');
+        const $filter = document.querySelector('.filter');
+        const $filterBtn = document.querySelector('.page-search__filter-btn');
+        const $filterCloseBtn = document.querySelector('.filter__close');
+        const $filterOverlay = document.querySelector('.filter__overlay');
+        const TRANSITION_DELAY = 400; 
+
+        let isInit = false;
+
+        if ($filter) {
+
+            const checkScreenWidth = () => {
+                const MOBILE_FILTER_BREAKPOINT = 1160;
+    
+                if (window.innerWidth > MOBILE_FILTER_BREAKPOINT && $header.classList.contains('active')) {
+                    closeMenu();
+                }
+                // Активируем фильтр только на экранах <= 1160
+                if (window.innerWidth <= MOBILE_FILTER_BREAKPOINT && !isInit) {
+                    isInit = true;
+                    $filterBtn.addEventListener('click', openFilter)
+                    $filterCloseBtn.addEventListener('click', closeFilter)
+                    $filterOverlay.addEventListener('click', closeFilter);
+                } else {
+                    window.addEventListener('resize', checkScreenWidth);
+                }
+            }
+    
+            function openFilter() {
+                $filterOverlay.style.display = 'block';
+                $filter.style.display = 'block';
+                $html.classList.add('overflow-hidden');
+        
+                setTimeout(function() {
+                    $filterOverlay.classList.add('active');
+                    $filter.classList.add('active');
+                }, 50)
+            }
+        
+            function closeFilter() {
+                $filterOverlay.classList.remove('active');
+                $filter.classList.remove('active');
+                $html.classList.remove('overflow-hidden');
+                
+                setTimeout(function() {
+                    $filterOverlay.style.display = '';
+                    $filter.style.display = '';
+                }, TRANSITION_DELAY)
+            }
+        
+            checkScreenWidth();
+        }
+    }
+
     function initModals() {
         const $modals = document.querySelectorAll('.modal');
         const $modalsTriggers = document.querySelectorAll('[data-micromodal-trigger]');
@@ -259,6 +314,7 @@ window.addEventListener('DOMContentLoaded', function() {
     initAccordions();
     initSelects();
     initFilter();
+    initFilterMenu();
     initFilterMore();
     initMasks();
     initCopyInputText();
