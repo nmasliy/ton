@@ -46,6 +46,29 @@
         }
     }
 
+    &__languages {
+        display: flex;
+        margin: 0 -3px;
+        padding-right: 19px;
+    }
+
+    &__lang {
+        display: block;
+        font-size: 15px;
+        line-height: 20px;
+        background-color: $grey-bg;
+        color: $text-2;
+        padding: 8px 16px;
+        border-radius: 11px;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0 3px;
+        &.active {
+            background-color: $secondary;
+            color: $white;
+        }
+    }
+
     &__btn-account {
         display: inline-flex;
         align-items: center;

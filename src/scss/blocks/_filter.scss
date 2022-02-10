@@ -70,6 +70,29 @@
         }
     }
 
+    &__input {
+        padding: 18px 24px;
+        padding-right: 30px;
+        width: 100%;
+    }
+
+    &__input-wrapper {
+        position: relative;
+    }
+
+    &__input-icon {
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__input-caption {
+        color: $text-2;
+        margin-bottom: 4px;
+    }
+
+
     &__categories-list {
         margin-bottom: 12px;
     }
