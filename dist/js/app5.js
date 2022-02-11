@@ -304,11 +304,19 @@ window.addEventListener('DOMContentLoaded', function() {
         const $phones = document.querySelectorAll('.phone-mask');
         const $telegrams = document.querySelectorAll('.telegram-mask');
         const $dollars = document.querySelectorAll('.dollar-mask');
+        const $signupPhones = document.querySelectorAll('.signup-page__phone input');
 
         if ($phones.length > 0) {
             $phones.forEach(item => {
                 IMask(item, {
                     mask: '+380000000000' 
+                });
+            })
+        }
+        if ($signupPhones.length > 0) {
+            $signupPhones.forEach(item => {
+                IMask(item, {
+                    mask: '00 000 00 00' 
                 });
             })
         }
