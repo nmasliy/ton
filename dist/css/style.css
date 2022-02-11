@@ -1863,6 +1863,7 @@ h1.title {
   position: relative;
 }
 .filter__input-icon {
+  display: flex;
   position: absolute;
   right: 12px;
   top: 50%;
@@ -2129,6 +2130,7 @@ h1.title {
   position: relative;
 }
 .filter__input-icon {
+  display: flex;
   position: absolute;
   right: 12px;
   top: 50%;
