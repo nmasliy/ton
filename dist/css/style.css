@@ -3429,7 +3429,7 @@ h1.title {
   margin-bottom: 0;
 }
 .signup-page__checkbox .form__checkbox-item::after {
-  background-image: url("../../img/check-white.svg");
+  background-image: url("../img/check-white.svg");
 }
 .signup-page__checkbox--show {
   margin-top: 13px;
