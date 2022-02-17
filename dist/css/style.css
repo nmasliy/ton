@@ -3517,6 +3517,7 @@ h1.title {
   display: flex;
   flex-wrap: wrap;
   margin: -10px;
+  padding-bottom: 25px;
 }
 .signup-page__tags-item {
   display: flex;
