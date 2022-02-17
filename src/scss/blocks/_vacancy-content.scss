@@ -7,8 +7,6 @@
     }
 
     &__about {
-        display: flex;
-        justify-content: flex-end;
         width: 243px;
     }
 
@@ -19,9 +17,13 @@
     }
 
     &__benefits {
-        display: flex;
-        flex-wrap: wrap;
-        margin: -8px;
+        display: inline-block;
+        border-radius: 8px;
+        box-shadow: 0px 4px 30px rgba(164, 164, 164, 0.1);
+        border-radius: 16px;
+        border: 1px solid $grey-bg;
+        padding: 30px 15px 37px 19px;
+        margin-top: 25px;
 
         li {
             display: flex;
@@ -29,10 +31,10 @@
             font-family: 'Inter', sans-serif;
             font-size: 16px;
             line-height: 19px;
-            border: 1px solid #D1D9EA;
-            border-radius: 8px;
-            margin: 8px;
-            padding: 14px 22px;
+            margin-bottom: 20px;
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
 
         span {

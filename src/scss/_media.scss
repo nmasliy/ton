@@ -927,6 +927,11 @@
             margin-left: 0;
         }
     }
+    .vacancy-content {
+        &__benefits {
+            display: block;
+        }
+    }
     .footer {
         &__policy-item {
             display: inline-block;

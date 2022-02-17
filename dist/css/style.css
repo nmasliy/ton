@@ -2990,8 +2990,6 @@ h1.title {
   justify-content: space-between;
 }
 .vacancy-content__about {
-  display: flex;
-  justify-content: flex-end;
   width: 243px;
 }
 .vacancy-content__info {
@@ -3000,9 +2998,13 @@ h1.title {
   padding-top: 22px;
 }
 .vacancy-content__benefits {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -8px;
+  display: inline-block;
+  border-radius: 8px;
+  box-shadow: 0px 4px 30px rgba(164, 164, 164, 0.1);
+  border-radius: 16px;
+  border: 1px solid #F8F9FB;
+  padding: 30px 15px 37px 19px;
+  margin-top: 25px;
 }
 .vacancy-content__benefits li {
   display: flex;
@@ -3010,10 +3012,10 @@ h1.title {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 19px;
-  border: 1px solid #D1D9EA;
-  border-radius: 8px;
-  margin: 8px;
-  padding: 14px 22px;
+  margin-bottom: 20px;
+}
+.vacancy-content__benefits li:last-child {
+  margin-bottom: 0;
 }
 .vacancy-content__benefits span {
   margin-left: 6px;
@@ -4562,6 +4564,10 @@ h1.title {
   }
   .vacancy__tag {
     margin-left: 0;
+  }
+
+  .vacancy-content__benefits {
+    display: block;
   }
 
   .footer__policy-item {
