@@ -3379,6 +3379,9 @@ h1.title {
   padding-right: 65px;
 }
 
+.signup-page {
+  padding-top: 55px;
+}
 .signup-page .form__input {
   line-height: 18px;
 }
