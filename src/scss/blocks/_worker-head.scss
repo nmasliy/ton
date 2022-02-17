@@ -12,10 +12,42 @@
         margin: 0 16px;
     }
 
-    &__right {
+    &__update {
+        margin: -4px;
+        display: flex;
+        padding-bottom: 27px;
+    }
+
+    &__update-btn {
+        width: calc(50% - 8px);
+        margin: 4px;
+        padding: 8px 16px;
+        font-size: 15px;
+        line-height: 20px;
+        background-color: $secondary;
+        border-radius: 11px;
+        color: $white;
+        text-align: center;
+    }
+
+    &__update-info {
+        width: calc(50% - 8px);
+        margin: 4px;
+        padding: 8px 16px;
+        font-size: 14px;
+        line-height: 18px;
+        border-radius: 11px;
+        background-color: $grey-bg;
+        text-align: center;
+    }
+
+    &__right-wrapper {
         width: calc(41% - 32px);
         margin: 0 16px;
-        margin-top: 11px;
+        margin-top: 34px;
+    }
+
+    &__right {
         background-color: $white;
         border: 1px solid $grey-bg;
         box-shadow: 0px 4px 30px rgba(164, 164, 164, 0.1);
@@ -81,12 +113,6 @@
 
     &__employment {
         margin-bottom: 12px;
-    }
-
-    &__extra {
-    }
-
-    &__extra-item {
     }
 
     &__btn {

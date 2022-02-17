@@ -20,9 +20,20 @@
 
     &__btn {
         font-size: 16px;
+        margin: 7px;
+        @media screen and (min-width: $mobileBreakpoint){
+            &:hover {
+                path {
+                    fill: $white;
+                }
+            }
+        }
     }
 
     &__btn-wrapper {
-        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        margin: -7px;
     }
 }

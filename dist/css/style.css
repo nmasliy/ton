@@ -2507,9 +2507,18 @@ h1.title {
 }
 .page-head__btn {
   font-size: 16px;
+  margin: 7px;
+}
+@media screen and (min-width: 1024px) {
+  .page-head__btn:hover path {
+    fill: #fff;
+  }
 }
 .page-head__btn-wrapper {
-  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin: -7px;
 }
 
 .worker-head__inner {
@@ -2522,10 +2531,38 @@ h1.title {
   width: calc(59% - 32px);
   margin: 0 16px;
 }
-.worker-head__right {
+.worker-head__update {
+  margin: -4px;
+  display: flex;
+  padding-bottom: 27px;
+}
+.worker-head__update-btn {
+  width: calc(50% - 8px);
+  margin: 4px;
+  padding: 8px 16px;
+  font-size: 15px;
+  line-height: 20px;
+  background-color: #97CA3E;
+  border-radius: 11px;
+  color: #fff;
+  text-align: center;
+}
+.worker-head__update-info {
+  width: calc(50% - 8px);
+  margin: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 11px;
+  background-color: #F8F9FB;
+  text-align: center;
+}
+.worker-head__right-wrapper {
   width: calc(41% - 32px);
   margin: 0 16px;
-  margin-top: 11px;
+  margin-top: 34px;
+}
+.worker-head__right {
   background-color: #fff;
   border: 1px solid #F8F9FB;
   box-shadow: 0px 4px 30px rgba(164, 164, 164, 0.1);
@@ -2825,10 +2862,17 @@ h1.title {
   flex-shrink: 0;
   padding: 10px;
 }
-.vacancy__btn {
+.vacancy__buttons {
   position: absolute;
   right: 16px;
   top: 16px;
+  display: flex;
+}
+.vacancy__btn {
+  margin-left: 8px;
+}
+.vacancy__btn:first-child {
+  margin-left: 0;
 }
 @media screen and (min-width: 1024px) {
   .vacancy__btn {
@@ -2892,7 +2936,26 @@ h1.title {
   justify-content: space-between;
 }
 .vacancy__foot-btn {
-  padding: 11px 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 25px;
+  min-width: 167px;
+}
+.vacancy__foot-btn span {
+  background-color: #fff;
+  padding: 2px 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  line-height: normal;
+  margin-left: 8px;
+  color: #3B86C6;
+  border: 1px solid #3B86C6;
 }
 .vacancy__foot {
   display: flex;
@@ -3914,6 +3977,11 @@ h1.title {
   .worker-head__inner {
     margin: 0;
   }
+  .worker-head__update {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 5px;
+  }
   .worker-head__left {
     margin: 0;
     width: 100%;
@@ -3921,15 +3989,17 @@ h1.title {
     justify-content: center;
   }
   .worker-head__right {
-    margin: 0;
-    width: 100%;
     background-color: transparent;
     border: none;
-    padding: 0;
     box-shadow: none;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .worker-head__right-wrapper {
+    margin: 0;
+    width: 100%;
+    padding: 0;
   }
 
   .worker-content__inner {
@@ -4422,6 +4492,13 @@ h1.title {
   }
 }
 @media screen and (max-width: 500px) {
+  .worker-head__update {
+    flex-direction: column;
+  }
+  .worker-head__update-btn, .worker-head__update-info {
+    width: 100%;
+  }
+
   .signup-page__logo-wrapper {
     flex-direction: column;
     align-items: flex-start;
@@ -4475,6 +4552,10 @@ h1.title {
   .vacancy__head {
     flex-direction: column;
     align-items: flex-start;
+    padding-right: 0;
+  }
+  .vacancy__head--admin {
+    padding-top: 60px;
   }
   .vacancy__info {
     margin-bottom: 15px;

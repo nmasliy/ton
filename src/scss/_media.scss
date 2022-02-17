@@ -314,6 +314,11 @@
         &__inner {
             margin: 0;
         }
+        &__update {
+            max-width: 600px;
+            margin: 0 auto;
+            padding-bottom: 5px;
+        }
         &__left {
             margin: 0;
             width: 100%;
@@ -321,15 +326,17 @@
             justify-content: center;
         }
         &__right {
-            margin: 0;
-            width: 100%;
             background-color: transparent;
             border: none;
-            padding: 0;
             box-shadow: none;
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+        &__right-wrapper {
+            margin: 0;
+            width: 100%;
+            padding: 0;
         }
     }
     .worker-content {
@@ -844,6 +851,14 @@
 } 
 
 @media screen and (max-width: 500px) {
+    .worker-head {
+        &__update {
+            flex-direction: column;
+        }
+        &__update-btn, &__update-info {
+            width: 100%;
+        }
+    }
     .signup-page {
         &__logo-wrapper {
             flex-direction: column;
@@ -900,6 +915,10 @@
         &__head {
             flex-direction: column;
             align-items: flex-start;
+            padding-right: 0;
+            &--admin {
+                padding-top: 60px;
+            }
         }
         &__info {
             margin-bottom: 15px;
